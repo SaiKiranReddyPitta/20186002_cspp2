@@ -19,14 +19,14 @@ public final class Solution {
         Scanner s=new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
-        System.out.println((long)power(base,exponent));
+        System.out.println((long)power(base, exponent));
     }
     /**
      *Need to write the power func and prints output.
      *@param base variable base
      *@param exponent variable exponent
      */
-    static double power(int base, int exponent) {
+    static double power(final int base, final int exponent) {
         return Math.pow(base, exponent);
     }
 }
