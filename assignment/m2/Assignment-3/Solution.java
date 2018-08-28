@@ -4,17 +4,19 @@ import java.util.Scanner;
  * @author Sai Kiran Reddy Pitta.
  */
 public final class Solution {
-    /*
+    /**
     Do not modify this main function.
     */
     private Solution() {
-        // we are not using this constructor.
+    /**
+     *we are not using this constructor.
+     */
     }
     /**
      *@param args variable
      */
     public static void main(String[] args) {
-        Scanner s=new Scanner(System.in);      
+        Scanner s=new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
         System.out.println((long)power(base,exponent));
