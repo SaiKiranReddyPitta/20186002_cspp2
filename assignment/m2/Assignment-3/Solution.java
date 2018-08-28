@@ -8,7 +8,7 @@ public class Solution {
         Scanner s=new Scanner(System.in);      
         int base = s.nextInt();
         int exponent = s.nextInt();
-        System.out.println(power(base,exponent));
+        System.out.println((int)power(base,exponent));
     }
     /*
     Need to write the power function and print the output.
