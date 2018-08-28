@@ -4,6 +4,9 @@ import java.util.Scanner;
  * @author Sai Kiran Reddy Pitta.
  */
 public final class Solution {
+    /**
+     *to declare a magic number.
+     */
     private static final int FOUR = 4;
     /**
      *private constructor.
