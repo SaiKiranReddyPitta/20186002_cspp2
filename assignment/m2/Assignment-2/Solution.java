@@ -1,10 +1,10 @@
 import java.util.Scanner;
-/**Solution.java
+/**Solution.java.
  *do not modify this main function.
  * @author Sai Kiran Reddy Pitta.
  */
 public final class Solution {
-	/*
+	/**
 	 *private constructor
 	 */
 	private Solution() {
@@ -21,13 +21,13 @@ public final class Solution {
 		rootsOfQuadraticEquation(a, b, c);
 	}
 	/**
-	 *Need to write the rootsOfQuadraticEquation function and print the output.
+	 *Need to write the rootsOfQuadraticEquation func and prints output.
 	 *@param a variable a
 	 *@param b variable b
 	 *@param c variable c
 	 */
-	static void rootsOfQuadraticEquation(final double a, 
-										 final double b, 
+	static void rootsOfQuadraticEquation(final double a,
+										 final double b,
 										 final double c) {
 		double determinant  = (b * b) - (4 * a * c);
 		double root1 = (-b + Math.sqrt(determinant)) / (2 * a);
