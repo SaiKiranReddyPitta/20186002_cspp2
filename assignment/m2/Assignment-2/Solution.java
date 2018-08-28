@@ -13,7 +13,7 @@ public final class Solution {
     /**
      *@param args variable
      */
-    public static void main(String[] args) {
+    public final static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
