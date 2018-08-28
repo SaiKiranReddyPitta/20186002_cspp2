@@ -26,7 +26,8 @@ public final class Solution {
      *@param base variable base
      *@param exponent variable exponent
      */
-    static double power(final int base, final int exponent) {
+    static double power(final int base, 
+                        final int exponent) {
         return Math.pow(base, exponent);
     }
 }
