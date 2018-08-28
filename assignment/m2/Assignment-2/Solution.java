@@ -4,6 +4,7 @@ import java.util.Scanner;
  * @author Sai Kiran Reddy Pitta.
  */
 public final class Solution {
+    private static final int FOUR = 4;
     /**
      *private constructor.
      */
@@ -29,7 +30,7 @@ public final class Solution {
     static void rootsOfQuadraticEquation(final double a,
                                          final double b,
                                          final double c) {
-        double determinant  = (b * b) - (4 * a * c);
+        double determinant  = (b * b) - (FOUR * a * c);
         double root1 = (-b + Math.sqrt(determinant)) / (2 * a);
         double root2 = (-b - Math.sqrt(determinant)) / (2 * a);
         System.out.println(root1 + " " + root2);
