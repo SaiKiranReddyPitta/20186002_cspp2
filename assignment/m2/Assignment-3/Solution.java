@@ -16,7 +16,7 @@ public final class Solution {
      *@param args variable
      */
     public static void main(String[] args) {
-        Scanner s=new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
         System.out.println((long)power(base, exponent));
