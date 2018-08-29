@@ -12,11 +12,11 @@ public final class Solution {
 /**.
  * Constructs the object.
  */
-private static final int a = 7;
+private static final int tofind = 7;
 /**.
  * Empty Constructor.
  */
-private static final int b = 10;
+private static final int todivide = 10;
 /**.
  * Empty Constructor.
  */
@@ -36,10 +36,10 @@ private static final int b = 10;
         for (i = 0; i <= n; i++) {
             j = i;
             while (j != 0) {
-                if (j % b == a) {
+                if (j % todivide == tofind) {
                     count++;
                 }
-                j /= b;
+                j /= todivide;
             }
         }
         System.out.println(count);
