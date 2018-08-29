@@ -12,7 +12,6 @@ public final class Solution {
 /**
  * . { function_description }
  *
- * @param      args  The arguments.
  */
     private Solution() {
         //Constructor.
