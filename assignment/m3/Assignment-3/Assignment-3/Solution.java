@@ -27,9 +27,9 @@ public final class Solution {
         int n2 = s.nextInt();
         System.out.println(gcd(n1, n2));
     }
-    /*
-	Need to write the gcd function and print the output.
-	*/
+    /**
+	 *Need to write the gcd function and print the output.
+	 */
         /**.
          * { var_description }
          * @param      n1    The n1.
