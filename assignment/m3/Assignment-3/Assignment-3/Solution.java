@@ -17,6 +17,10 @@ public final class Solution {
     private Solution () {
         //Constructor.
     }
+/**.
+ * Fill the main function to print the number of 7's between 1 to n.
+ * @param      args  The arguments.
+ */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
