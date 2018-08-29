@@ -30,7 +30,7 @@ public final class Solution {
     /*
 	Need to write the gcd function and print the output.
 	*/
-        /**
+        /**.
          * { var_description }
          * @param      n1    The n1.
          * @param      n2    The n2.
