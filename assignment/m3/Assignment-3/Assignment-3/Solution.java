@@ -8,12 +8,15 @@ import java.util.Scanner;
 /**
  * Do not modify this main function.
  */
-public class Solution {
+public final class Solution {
 /**
- * { function_description }
+ * . { function_description }
  *
  * @param      args  The arguments.
  */
+    private Solution () {
+        //Constructor.
+    }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
