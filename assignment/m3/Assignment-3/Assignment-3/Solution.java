@@ -19,18 +19,18 @@ public final class Solution {
     }
 /**.
  * Fill the main function to print the number of 7's between 1 to n.
- * @param      args  The arguments.
+ * @param args  The arguments.
  */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
         int n2 = s.nextInt();
         System.out.println(gcd(n1, n2));
     }
     /**
-	 *Need to write the gcd function and print the output.
-	 */
-    /**
+     *Need to write the gcd function and print the output.
+     */
+    /**.
      * { function_description }
      *
      * @param      n1    The n 1
