@@ -36,8 +36,9 @@ private static final int b = 10;
         for (i = 0; i <= n; i++) {
             j = i;
             while (j != 0) {
-                if (j % b == a)
+                if (j % b == a) {
                     count++;
+                }
                 j /= b;
             }
         }
