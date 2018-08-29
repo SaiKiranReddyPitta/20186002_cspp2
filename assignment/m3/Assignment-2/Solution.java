@@ -13,6 +13,9 @@ public final class Solution {
  * Constructs the object.
  */
 private static final int a = 7;
+/**.
+ * Empty Constructor.
+ */
 private static final int b = 10;
 /**.
  * Empty Constructor.
