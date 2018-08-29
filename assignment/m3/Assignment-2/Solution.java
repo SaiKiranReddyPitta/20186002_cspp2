@@ -12,11 +12,11 @@ public final class Solution {
 /**.
  * Constructs the object.
  */
-private static final int a = 7;
+private static final int SEVEN = 7;
 /**.
  * Empty Constructor.
  */
-private static final int b = 10;
+private static final int TEN = 10;
 /**.
  * Empty Constructor.
  */
@@ -36,10 +36,10 @@ private static final int b = 10;
         for (i = 0; i <= n; i++) {
             j = i;
             while (j != 0) {
-                if (j % b == a) {
+                if (j % TEN == SEVEN) {
                     count++;
                 }
-                j /= b;
+                j /= TEN;
             }
         }
         System.out.println(count);
