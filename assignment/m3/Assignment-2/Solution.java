@@ -17,7 +17,7 @@ private static final int b = 10;
 /**.
  * Empty Constructor.
  */
-    private Solution(){
+    private Solution() {
           //Constructor
     }
 /**.
@@ -25,7 +25,7 @@ private static final int b = 10;
  * @param      args  The arguments.
  */
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int count = 0;
         int i = 0;
@@ -38,6 +38,6 @@ private static final int b = 10;
                 j /= b;
             }
         }
-        System.out.println(count); 
+        System.out.println(count);
     }
 }
