@@ -37,7 +37,7 @@ private static final int b = 10;
             j = i;
             while (j != 0) {
                 if (j % b == a)
-                    count ++;
+                    count++;
                 j /= b;
             }
         }
