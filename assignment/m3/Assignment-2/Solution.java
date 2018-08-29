@@ -27,7 +27,7 @@ private static final int b = 10;
  * Fill the main function to print the number of 7's between 1 to n.
  * @param      args  The arguments.
  */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int count = 0;
