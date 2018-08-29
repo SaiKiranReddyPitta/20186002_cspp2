@@ -23,12 +23,12 @@ public class Solution {
     /*
 	Need to write the gcd function and print the output.
 	*/
-    static int gcd(final int n1, final int n2) {
         /**
          * { var_description }
          * @param      n1    The n1.
          * @param      n2    The n2.
          */
+    static int gcd(final int n1, final int n2) {
     int gcd = 1;
     for (int i = 1; i <= n1 && i <= n2; i++) {
             // Checks if i is factor of both integers.
