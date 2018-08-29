@@ -25,17 +25,16 @@ private static final int b = 10;
  * @param      args  The arguments.
  */
     public static void main(String[] args) {
-        Scanner s=new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
         int count = 0;
         int i = 0;
         int j;
-
         for (i = 0; i <= n; i++) {
             j = i;
             while (j != 0) {
                 if (j % b == a)
-                    count ++;
+                    count ++ ;
                 j /= b;
             }
         }
