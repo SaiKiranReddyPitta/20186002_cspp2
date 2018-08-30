@@ -8,25 +8,25 @@ import java.util.*;
 /**.
  * Class for solution.
  */
-public final class Solution{
+public final class Solution {
 /**.
  *Fill this main function to print maximum of given array.
- */    
+ */
     private Solution() {
         //Constructor.
     }
     /**.
      *@param      args  The arguments
      */
-    public static void main(String[] args)
+    public static void main(final String[] args) {
     /**.
      * { item_description }
      */
-    {
+    
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int [] a = new int [n];
-        for (int i = 0; i <= n-1; i++) {
+        int[] a = new int[n];
+        for (int i = 0; i <= n - 1; i++) {
             a[i] = sc.nextInt();
         }
 
@@ -36,13 +36,12 @@ public final class Solution{
         // System.out.println(a[n-1]);
 
         int max = a[0];
-        for(int i = 1; i < a.length; i++)
+        for (int i = 1; i < a.length; i++) {
             /**.
              * { item_description }
              */
-        {
-            if(a[i] > max)
-            {
+        
+            if (a[i] > max) {
                 max = a[i];
             }
         }
