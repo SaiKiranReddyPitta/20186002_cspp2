@@ -4,9 +4,13 @@
 /**.
  * Class for solution.
  */
-import java.util.*;
+import java.util.Arrays;
 /**.
  * Class for solution.
+ */
+import java.util.Scanner;
+/**.
+ * { item_description }
  */
 public final class Solution {
 /**.
@@ -22,14 +26,12 @@ public final class Solution {
     /**.
      * { item_description }
      */
-    
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] a = new int[n];
         for (int i = 0; i <= n - 1; i++) {
             a[i] = sc.nextInt();
         }
-
         // for (int i=0; i< n-1; i++) {
         //     System.out.println(a[i]+ ", ");
         // }
@@ -40,7 +42,6 @@ public final class Solution {
             /**.
              * { item_description }
              */
-        
             if (a[i] > max) {
                 max = a[i];
             }
