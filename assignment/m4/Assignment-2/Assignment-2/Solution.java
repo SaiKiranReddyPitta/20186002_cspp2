@@ -55,7 +55,6 @@ public class Solution
             }
             if (p == m && q == n) 
         	{
-        		String res = "";
             int c[][] = new int[m][n];            
             for (int i = 0; i < p; i++) 
             {
@@ -65,22 +64,20 @@ public class Solution
                     {
                         c[i][j] = a[i][j] + b[i][j];
                     }
-                        res += c[i][j] + "\n";
                 }
-                       System.out.println(res);
             }
 
             //System.out.println("Matrix after addition:");
-
+            String res = "";
             for (int i = 0; i < p; i++) 
             {
                 for (int j = 0; j < n; j++) 
                 {
                     //System.out.print(c[i][j]+" ");
-
+                    res += res.trim() + "\n";
                 }
-                System.out.println("");
             }
+                System.out.print(res);
         }
         else
         {
