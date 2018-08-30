@@ -64,23 +64,23 @@ public class Solution
                     for (int k = 0; k < q; k++) 
                     {
                         c[i][j] = a[i][j] + b[i][j];
-                        res += c[i][j] + "\n";
                     }
+                        res += c[i][j] + "\n";
                 }
             }
                        // System.out.println(res);
 
             //System.out.println("Matrix after addition:");
 
-            // for (int i = 0; i < p; i++) 
-            // {
-            //     for (int j = 0; j < n; j++) 
-            //     {
-            //         //System.out.print(c[i][j]+" ");
+            for (int i = 0; i < p; i++) 
+            {
+                for (int j = 0; j < n; j++) 
+                {
+                    //System.out.print(c[i][j]+" ");
 
-            //     }
-            //     System.out.println("");
-            // }
+                }
+                System.out.println("");
+            }
         }
         else
         {
