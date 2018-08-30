@@ -23,10 +23,10 @@ public final class Solution{
      * { item_description }
      */
     {
-        Scanner sc=new Scanner(System.in);
-        int n= sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int [] a = new int [n];
-        for (int i=0; i<= n-1; i++) {
+        for (int i = 0; i <= n-1; i++) {
             a[i] = sc.nextInt();
         }
 
