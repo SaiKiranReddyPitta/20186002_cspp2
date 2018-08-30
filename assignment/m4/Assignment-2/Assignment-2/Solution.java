@@ -27,17 +27,25 @@ public class Solution {
       for ( c = 0 ; c < m ; c++ )
          for ( d = 0 ; d < n ; d++ ){
              sum[c][d] = first[c][d] + second[c][d]; 
-             System.out.print(sum[c][d]+" "); //replace '+' with '-' to subtract matrices
- 		// System.out.println(Arrays.toString(sum[c][d]+"\t"));
-        }
-//Addition of matrices.
+
+//  		// System.out.println(Arrays.toString(sum[c][d]+"\t"));
+//         }
+// //Addition of matrices.
  
-      for ( c = 0 ; c < m ; c++ )
-      {
-         for ( d = 0 ; d < n ; d++ )
-            System.out.print(sum[c][d]+" ");
+//       for ( c = 0 ; c < m ; c++ )
+//       {
+//          for ( d = 0 ; d < n ; d++ )
+//             System.out.print(sum[c][d]+" ");
  
-         System.out.println();
-      }
-   }
+//          System.out.println();
+//       }
+//       for (int i = 0; i < rows; i++) {
+           for (int i = 0; i < m; i++) {
+           for (int j = 0; j < n; j++) {
+               System.out.print(sum[c][d] + " ");
+           }
+           System.out.println();
+       }
+    }
+}
 }
