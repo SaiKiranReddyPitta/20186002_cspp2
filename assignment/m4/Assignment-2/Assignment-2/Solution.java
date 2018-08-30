@@ -68,16 +68,15 @@ public class Solution
             }
 
             //System.out.println("Matrix after addition:");
-            String res = "";
+            
             for (int i = 0; i < p; i++) 
             {
                 for (int j = 0; j < n; j++) 
                 {
-                    //System.out.print(c[i][j]+" ");
-                    res += res.trim() + "\n";
+                    System.out.print(c[i][j]+" ");
                 }
+                System.out.println("");
             }
-                System.out.print(res);
         }
         else
         {
