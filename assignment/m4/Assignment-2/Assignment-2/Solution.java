@@ -17,7 +17,7 @@ public class Solution {
          for ( d = 0 ; d < n ; d++ ){
             first[c][d] = in.nextInt();
         }
-        System.out.println(Arrays.toString(first));
+        
  
       for ( c = 0 ; c < m ; c++ )
          for ( d = 0 ; d < n ; d++ ){
