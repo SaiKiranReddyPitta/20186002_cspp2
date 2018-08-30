@@ -55,6 +55,7 @@ public class Solution
             }
             if (p == m && q == n) 
         	{
+        		String res = "";
             int c[][] = new int[m][n];            
             for (int i = 0; i < p; i++) 
             {
@@ -63,6 +64,7 @@ public class Solution
                     for (int k = 0; k < q; k++) 
                     {
                         c[i][j] = a[i][j] + b[i][j];
+                        res += c[i][j] + "\n";
                     }
                 }
             }
@@ -73,7 +75,8 @@ public class Solution
             {
                 for (int j = 0; j < n; j++) 
                 {
-                    System.out.print(c[i][j]+" ");
+                    //System.out.print(c[i][j]+" ");
+                    System.out.println(res);
                 }
                 System.out.println("");
             }
