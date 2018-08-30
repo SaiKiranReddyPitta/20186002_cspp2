@@ -4,9 +4,9 @@ public class Solution {
 	/* Fill the main function to print resultant of addition of matrices*/
 	public static void main(String[] args) {
        Scanner s = new Scanner(System.in);
-       System.out.print("Enter number of rows: ");
+       //System.out.print("Enter number of rows: ");
        int rows = s.nextInt();
-       System.out.print("Enter number of columns: ");
+       //System.out.print("Enter number of columns: ");
        int columns = s.nextInt();
        int[][] a = new int[rows][columns];
        int[][] b = new int[rows][columns];
