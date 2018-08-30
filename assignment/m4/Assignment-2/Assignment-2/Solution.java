@@ -14,14 +14,16 @@ public class Solution {
     int sum[][] = new int[m][n];
  
       for (  c = 0 ; c < m ; c++ )
-         for ( d = 0 ; d < n ; d++ )
+         for ( d = 0 ; d < n ; d++ ){
             first[c][d] = in.nextInt();
+        }
         System.out.println(Arrays.toString(first));
  
       for ( c = 0 ; c < m ; c++ )
-         for ( d = 0 ; d < n ; d++ )
+         for ( d = 0 ; d < n ; d++ ){
             second[c][d] = in.nextInt();
-        System.out.println(Arrays.toString(second));
+            }
+      
       for ( c = 0 ; c < m ; c++ )
          for ( d = 0 ; d < n ; d++ )
              sum[c][d] = first[c][d] + second[c][d];  //replace '+' with '-' to subtract matrices
