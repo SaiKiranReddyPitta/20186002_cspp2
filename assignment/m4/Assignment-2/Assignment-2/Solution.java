@@ -17,6 +17,7 @@ Scanner scanner = new Scanner(System.in);
        int[][] sum = add(a, b);
        //System.out.println();
        //System.out.println("A + B =");
+       //printMatrix(sum);
        System.out.println(sum);
    }
    public static int[][] readMatrix(int rows, int columns) {
