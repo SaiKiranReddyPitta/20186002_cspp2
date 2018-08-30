@@ -67,8 +67,8 @@ public class Solution
                     }
                         res += c[i][j] + "\n";
                 }
+                       System.out.println(res);
             }
-                       // System.out.println(res);
 
             //System.out.println("Matrix after addition:");
 
