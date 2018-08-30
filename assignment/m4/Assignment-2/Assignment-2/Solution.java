@@ -1,23 +1,19 @@
 import java.util.Scanner;
-import java.util.*;
-public class Solution {
-	/* Fill the main function to print resultant of addition of matrices*/
-	public static void main(String[] args) {
-int p, q, m, n;
+public class Solution
+{
+    public static void main(String[] args) 
+    {
+        int p, q, m, n;
         Scanner s = new Scanner(System.in);
         //System.out.print("Enter number of rows in first matrix:");
         p = s.nextInt();
         //System.out.print("Enter number of columns in first matrix:");
         q = s.nextInt();
-        //System.out.print("Enter number of rows in second matrix:");
-        m = s.nextInt();
-        //System.out.print("Enter number of columns in second matrix:");
-        n = s.nextInt();
-        if (p == m && q == n) 
-        {
+
+        
             int a[][] = new int[p][q];
-            int b[][] = new int[m][n];
-            int c[][] = new int[m][n];
+            
+
             //System.out.println("Enter all the elements of first matrix:");
             for (int i = 0; i < p; i++) 
             {
@@ -26,7 +22,12 @@ int p, q, m, n;
                     a[i][j] = s.nextInt();
                 }
             }
-            //System.out.println("Enter all the elements of second matrix:");
+        //System.out.print("Enter number of rows in second matrix:");
+        m = s.nextInt();
+        //System.out.print("Enter number of columns in second matrix:");
+        n = s.nextInt();
+           //System.out.println("Enter all the elements of second matrix:");
+            int b[][] = new int[m][n];
             for (int i = 0; i < m; i++) 
             {
                 for (int j = 0; j < n; j++) 
@@ -34,24 +35,27 @@ int p, q, m, n;
                     b[i][j] = s.nextInt();
                 }
             }
-            //System.out.println("First Matrix:");
-            for (int i = 0; i < p; i++) 
-            {
-                for (int j = 0; j < q; j++) 
-                {
-                    System.out.print(a[i][j]+" ");
-                }
-                System.out.println("");
-            }
+           // System.out.println("First Matrix:");
+            // for (int i = 0; i < p; i++) 
+            // {
+            //     for (int j = 0; j < q; j++) 
+            //     {
+            //         //System.out.print("");/*(a[i][j]+" ");*/
+            //     }
+            //     //System.out.println("");
+            // }
             //System.out.println("Second Matrix:");
             for (int i = 0; i < m; i++) 
             {
                 for (int j = 0; j < n; j++) 
                 {
-                    System.out.print(b[i][j]+" ");
+                    //System.out.print("");/*(b[i][j]+" ");*/
                 }
-                System.out.println("");
+                //System.out.println("");
             }
+            if (p == m && q == n) 
+        	{
+            int c[][] = new int[m][n];            
             for (int i = 0; i < p; i++) 
             {
                 for (int j = 0; j < n; j++) 
@@ -62,7 +66,9 @@ int p, q, m, n;
                     }
                 }
             }
+
             //System.out.println("Matrix after addition:");
+
             for (int i = 0; i < p; i++) 
             {
                 for (int j = 0; j < n; j++) 
@@ -76,6 +82,5 @@ int p, q, m, n;
         {
             System.out.println("not possible");
         }
-   }
+    }
 }
-
