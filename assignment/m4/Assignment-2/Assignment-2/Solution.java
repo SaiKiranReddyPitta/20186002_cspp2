@@ -65,8 +65,8 @@ public class Solution
                     {
                         c[i][j] = a[i][j] + b[i][j];
                         res += c[i][j] + "\n";
-                        System.out.println(res);
                     }
+                        System.out.println(res);
                 }
             }
 
