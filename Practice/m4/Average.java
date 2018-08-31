@@ -26,3 +26,5 @@ public final class Average {
         System.out.println(average);
     }
 }
+
+
