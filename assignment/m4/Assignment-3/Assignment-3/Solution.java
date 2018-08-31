@@ -1,44 +1,47 @@
-/**
- *Reverse the given string.
- *@author Sai Kiran Reddy Pitta.
- **/
 import java.util.Scanner;
 /**
- *used to take inputs.
- **/
+ *returns the decimal value for the given binary string.
+ *@author Sai Kiran Reddy Pitta.
+ */
 public final class Solution {
     /**
-     *empty constructor.
+     *This is an empty constructor.
+     **/
+    // private static final double PIVALUE = 22 / 7.0.
+    /**
+     *@variable PIVALUE.
      **/
     private Solution() {
-    //I am not using this function
+        //I'm not using this constructor.
     }
     /**
-     *main function.
+     *This is an main function.
      *@param args is parameter for this function.
      **/
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        String reverse = reverseString(s);
-        System.out.println(reverse);
-    }
-    //Write reverseString function
-
-    /**
-     * reverseString function.
-     *
-     * @param      s is parameter for this function.
-     *
-     * @return    string
-     */
-    public static String reverseString(final String s) {
-        String rev = "";
-        for (int i = s.length() - 1; i >= 0; i--) {
-            rev += s.charAt(i);
+        int n = sc.nextInt();
+        // sc.nextLine();
+        for (int i = 0; i < n; i++) {
+            String s = sc.next();
+            int res = binaryToDecimal(s);
+            System.out.println(res);
         }
-        return rev;
+    }
+    /**
+     *binary to decimal function.
+     *@param s is parameter for this function.
+     *@return string
+     **/
+    public static int binaryToDecimal(final String s) {
+        int sum = 0, power = 1;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '1') {
+                sum += Math.pow(2, s.length() - i - 1);
+            }
+            // sum += ((int) (s.charAt(i)) - '0') * power;
+            // power *= 2;
+        }
+        return sum;
     }
 }
-
-
