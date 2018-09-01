@@ -13,7 +13,7 @@ public final class Solution {
         //not used
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      i     { parameter_description }
@@ -26,7 +26,7 @@ public final class Solution {
             }
         return true;
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      i     { parameter_description }
