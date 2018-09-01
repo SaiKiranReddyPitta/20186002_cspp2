@@ -29,7 +29,7 @@ final class Solution {
         final int hundred = 100;
         final int fifty = 50;
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns ; j++ ) {
+            for (int j = 0; j < columns; j++) {
                 int num = a[i][j] / hundred;
                 int rem = a[i][j] % hundred;
                 if (rem <= fifty) {
@@ -39,9 +39,8 @@ final class Solution {
                 }
             }
 
-        } 
+        }
         return a;
-    
     }
     /**
      * Main function.
