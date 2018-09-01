@@ -21,14 +21,11 @@ public final class Solution {
      * @return     { description_of_the_return_value }
      */
     public static boolean ifodd(final int i) {
-        
-            if(i % 2 == 0) {
+            if (i % 2 == 0) {
                 return false;
             }
         return true;
     }
-    
-
     /**
      * { function_description }
      *
