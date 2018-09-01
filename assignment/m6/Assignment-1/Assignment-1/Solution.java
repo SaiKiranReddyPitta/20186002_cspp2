@@ -3,7 +3,7 @@ import java.util.Scanner;
  * program to find the odd composite numbers.
  * between 2 and n where n is given as an input.
  *
- * @author : Sai Kiran Reddy Pitta. 
+ * @author : Sai Kiran Reddy Pitta.
  */
 public final class Solution {
     /**
@@ -12,6 +12,14 @@ public final class Solution {
     private Solution() {
         //not used
     }
+
+    /**
+     * { function_description }
+     *
+     * @param      i     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static boolean ifodd(final int i) {
         
             if(i % 2 == 0) {
