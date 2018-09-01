@@ -27,7 +27,7 @@ final class Solution {
 	// write ypur code here
         final int hundred = 100; 
         final int fifty = 50;
-        for (int i = 0; i <= rows; i++) {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns ; j++ ) {
                 int num = a[i][j] / hundred;
                 int rem = a[i][j] % hundred;
@@ -39,7 +39,8 @@ final class Solution {
                 
             }
 
-        } return a;
+        } 
+        return a;
 	
     }
     /**
