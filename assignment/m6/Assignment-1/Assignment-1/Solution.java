@@ -29,13 +29,20 @@ public final class Solution {
     }
     
 
+    /**
+     * { function_description }
+     *
+     * @param      i     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static boolean ifprime(final int i) {
-        for (int j = 2; j < i; j ++) {
+        for (int j = 2; j < i; j++) {
             if (i % j == 0) {
                 return true;
             }
         }
-        return false; 
+        return false;
     }
     /**
      * Prints the odd composite numbers between 2 and n.
@@ -44,7 +51,7 @@ public final class Solution {
      */
     static void oddComposites(final int n) {
         for (int i = 1; i <= n; i++) {
-            if(ifodd(i) && ifprime(i)) {
+            if (ifodd(i) && ifprime(i)) {
                 System.out.println(i);
             }
 
