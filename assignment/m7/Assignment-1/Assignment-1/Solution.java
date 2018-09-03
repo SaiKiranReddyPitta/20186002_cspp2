@@ -1,6 +1,6 @@
 /**
  *@author Sai Kiran Reddy Pitta.
-*/
+ */
 import java.util.Scanner;
 class InputValidator
 {
@@ -17,9 +17,7 @@ class InputValidator
      * @return     { description_of_the_return_value }
      */
     boolean validateData() {
-        if(name.length()>6) {
-            return true;
-        }return false;
+        return (name.length() > 6);
     }
 }
 /**
@@ -31,7 +29,7 @@ public class Solution
     {
         Scanner s = new Scanner(System.in);
         String input = s.next();
-        InputValidator i = new InputValidator(input);     
+        InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
 
     }
