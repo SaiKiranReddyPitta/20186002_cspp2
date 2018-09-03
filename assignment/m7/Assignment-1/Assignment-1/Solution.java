@@ -1,4 +1,4 @@
-/**
+/**.
  *@author Sai Kiran Reddy Pitta.
  */
 import java.util.Scanner;
@@ -7,18 +7,18 @@ class InputValidator {
      * Write the atrributes and methods for InputValidator.
      */
     private String name;
-    /**
+    /**.
      * Constructs the object.
      *
      * @param      name  The name.
      */
     InputValidator(final String name) {
-        /**
+        /**.
          * { item_description }
          */
         this.name = name;
     }
-    /**
+    /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
@@ -28,11 +28,11 @@ class InputValidator {
         return (name.length() >= SIX);
     }
 }
-/**
+/**.
  * Class for solution.
  */
 public class Solution {
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments.
