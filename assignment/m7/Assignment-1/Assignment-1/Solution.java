@@ -2,45 +2,67 @@
  *@author Sai Kiran Reddy Pitta.
  */
 import java.util.Scanner;
+/**.
+ * It is the class.
+ */
 class InputValidator {
-    /*
-     * Write the atrributes and methods for InputValidator.
-     */
-    private String name;
     /**.
-     * Constructs the object.
-     *
-     * @param      name  The name.
+     * Attributes declaration.
      */
-    InputValidator(final String name) {
+    private String data;
+    /**.
+     * Constructor object.
+     *
+     * @param      input  The input.
+     */
+    InputValidator(final String input) {
         /**.
-         * { item_description }
+         * It's counstructor.
          */
-        this.name = name;
+        this.data = input;
     }
     /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
      */
-    final int SIX = 6;
-    boolean validateData() {
-        return (name.length() >= SIX);
+    Boolean validateData() {
+        /**.
+         * It's the conditional method.
+         */
+        final int six = 6;
+        if (data.length() >= six) {
+            return true;
+        }
+        return false;
     }
 }
 /**.
- * Class for solution.
+ * { item_description }
  */
-public class Solution {
+public final class Solution {
+    /**.
+     * Constructor object.
+     */
+    private  Solution() {
+        /**.
+         * It's counstructor.
+         */
+    }
     /**.
      * { function_description }
      *
      * @param      args  The arguments.
      */
     public static void main(final String[] args) {
+        /**.
+         * It's the main class description.
+         */
         Scanner s = new Scanner(System.in);
         String input = s.next();
         InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
     }
 }
+
+
