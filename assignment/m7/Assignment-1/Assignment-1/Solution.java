@@ -10,7 +10,7 @@ class InputValidator {
     /**
      * Constructs the object.
      *
-     * @param      name  The name
+     * @param      name  The name.
      */
     InputValidator(String name) {
         /**
@@ -23,8 +23,9 @@ class InputValidator {
      *
      * @return     { description_of_the_return_value }
      */
+    final int SIX = 6;
     boolean validateData() {
-        return (name.length() >= 6);
+        return (name.length() >= SIX);
     }
 }
 /**
@@ -34,14 +35,12 @@ public class Solution {
     /**
      * { function_description }
      *
-     * @param      args  The arguments
+     * @param      args  The arguments.
      */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
         InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
-
     }
-
 }
