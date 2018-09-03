@@ -4,10 +4,18 @@
 import java.util.Scanner;
 class InputValidator {
     /*
-     * Write the atrributes and methods for InputValidator
+     * Write the atrributes and methods for InputValidator.
      */
     private String name;
+    /**
+     * Constructs the object.
+     *
+     * @param      name  The name
+     */
     InputValidator(String name) {
+        /**
+         * { item_description }
+         */
         this.name = name;
     }
     /**
@@ -16,14 +24,19 @@ class InputValidator {
      * @return     { description_of_the_return_value }
      */
     boolean validateData() {
-        return (name.length() > 6);
+        return (name.length() >= 6);
     }
 }
 /**
  * Class for solution.
  */
 public class Solution {
-    public static void main(String args[]) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
         InputValidator i = new InputValidator(input);
