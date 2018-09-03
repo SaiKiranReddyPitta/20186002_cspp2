@@ -23,9 +23,9 @@ class InputValidator {
      *
      * @return     { description_of_the_return_value }
      */
-    final int SIX = 6;
+    final int Six = 6;
     boolean validateData() {
-        return (name.length() >= SIX);
+        return (name.length() >= Six);
     }
 }
 /**
