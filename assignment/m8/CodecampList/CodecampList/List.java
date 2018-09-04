@@ -30,7 +30,7 @@ public class List {
      * will protect the array such corruption.
      * This is a hard concept to understand. Discuss with your mentor.
      *
-    */
+     */
     /**.
      *@variable TEN
      **/
@@ -210,7 +210,7 @@ public class List {
      * not all the elements of the array.
      *
      */
-    /**
+    /**.
      * display the items in list.
      *
      * @return     String representation of the object.
@@ -311,7 +311,7 @@ public class List {
                 break;
                 case "get":
                 int n = l.get(Integer.parseInt(tokens[1]));
-                if (n != -1) {
+                if(n != -1) {
                     System.out.println(n);
                 }
                 break;
