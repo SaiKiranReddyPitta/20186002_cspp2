@@ -1,16 +1,16 @@
-/**
-*list abstract data types.
-*@author Sai Kiran Reddy Pitta.
-**/
+/**.
+ *list abstract data types.
+ *@author Sai Kiran Reddy Pitta.
+ **/
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-/**
-*using scanner class to give inputs.
-**/
+/**.
+ *using scanner class to give inputs.
+ **/
 public class List {
     //Implement all the methods mentioned to build a ListADT
 
-    /*
+    /**.
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
      * An array would be good. Right?
@@ -31,11 +31,11 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    /**
-    *@variable TEN
-    **/
+    /**.
+     *@variable TEN
+     **/
     private static final int TEN = 10;
-    /**
+    /**.
      *declaration private.
      **/
     private int[] list;
@@ -43,7 +43,7 @@ public class List {
     // don't create the array yet using new
     // that's the job of the List constructor
 
-    /*
+    /**.
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
      * If you add 2 items to the list then the size should be 2.
@@ -61,7 +61,7 @@ public class List {
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
      */
-    /**
+    /**.
      * private declaration for size.
      **/
     private int size;
@@ -69,11 +69,11 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
 
-    /*
+    /**.
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-    /**
+    /**.
      * Constructing object.
      */
     public List() {
@@ -90,7 +90,7 @@ public class List {
         // An empty list has how many items?
         // That is the initial value to use for size.
     }
-    /*
+    /**.
      * The add method does what the name suggests.
      * Add an int item to the list.
      * The assumption is to store the item at the end of the list
@@ -100,7 +100,7 @@ public class List {
      * to the list.
      * The method returns void (nothing)
      */
-    /**
+    /**.
      * add the elements to list.
      * @param      item  The item
      **/
@@ -112,13 +112,13 @@ public class List {
         }
     }
 
-    /*
+    /**.
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
      * The method returns an int. Empty list should return 0.
      */
-    /**
+    /**.
      * size of array.
      *@return int
      **/
@@ -127,7 +127,7 @@ public class List {
         return size;
     }
 
-    /*
+    /**.
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
@@ -147,7 +147,7 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
-    /**
+    /**.
      * remove the elements in array.
      *
      * @param      index  The index
@@ -165,7 +165,7 @@ public class List {
         }
     }
 
-    /*
+    /**.
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
      * If the item doesn't exist then return a -1 to indicate that
@@ -176,7 +176,7 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    /**
+    /**.
      * return the item at the index.
      *
      * @param      index  The index
@@ -191,7 +191,7 @@ public class List {
         return -1;
     }
 
-    /*
+    /**.
      * What happens when you print an object using println?
      * Java provides a method named toString that is internally
      * invoked when an object variable is used in println.
@@ -226,7 +226,7 @@ public class List {
         return s;
     }
 
-    /*
+    /**.
      * Contains return true if the list has
      * the item passed as an argument to the method
      * So, iterate through the list and return true if
@@ -248,12 +248,12 @@ public class List {
         }
         return false;
     }
-    /*
+    /**.
      * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    /**
+    /**.
      * index of occurrence of element.
      *
      * @param      item  The item
@@ -269,7 +269,7 @@ public class List {
         }
         return -1;
     }
-    /**
+    /**.
     *main function.
     *@param args is parameter for this function.
     **/
@@ -311,7 +311,7 @@ public class List {
                 break;
                 case "get":
                 int n = l.get(Integer.parseInt(tokens[1]));
-                if(n != -1) {
+                if (n != -1) {
                     System.out.println(n);
                 }
                 break;
