@@ -31,7 +31,7 @@ public class Fibonacci
         int sum = 0;
         int t1 = 0;
         int t2 = 1;
-        List forFibonacci = new List();
+        List forFibonacci = new List(n);
         forFibonacci.add(t1);
         forFibonacci.add(t2);
         for (int i = 2; i < n; ++i) {

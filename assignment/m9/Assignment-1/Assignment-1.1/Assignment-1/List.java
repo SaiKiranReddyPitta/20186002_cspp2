@@ -70,7 +70,7 @@ public class List {
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new int[20];
+        list = new int[10];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
@@ -87,7 +87,6 @@ public class List {
      * There will be some clients of the ADT that will require
      * the list to contain n elements which is known
      * at the time of creating the list.
-     * 
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
@@ -95,6 +94,9 @@ public class List {
      */
 
     // todo - add an overloaded constructor here
+    public List(int n) {
+        list = new int[n];
+    }
     
     /**
      * The add method does what the name suggests.
