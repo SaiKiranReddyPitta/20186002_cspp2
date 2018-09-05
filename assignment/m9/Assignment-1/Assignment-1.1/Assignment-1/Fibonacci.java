@@ -1,6 +1,9 @@
+/**.
+ *list abstract data types.
+ *@author Sai Kiran Reddy Pitta.
+ **/
 import java.util.Scanner;
-
-/**
+/**.
  * In the previous module you have created List ADT.
  * ADTs are developed as reusable libraries
  * i.e., anyone who needs the ADT can use it in their program
@@ -14,19 +17,20 @@ import java.util.Scanner;
  * So, Fibonacci is going to instantiate an object of List ADT
  * generate fibonacci numbers and add them to the list
  * by invoking the add method provided in the List ADT.
- *
  */
-
-public class Fibonacci
-{
-    /*
-     * fib is a static method takes a argument n
-     * n is the count of the fibonacci numbers to be generated.
-     * The method returns a List with the n fibonacci numbers.
+public class Fibonacci{
+    /**.
+     * fib is a static method takes a argument n n is the count of the fibonacci
+     * numbers to be generated. The method returns a List with the n fibonacci
+     * numbers.
      *
      * Look for the hint.txt if some of the testcases fail.
+     *
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public static List fib(int n) {
+    public static List fib(final int n) {
         // todo - complete this method
         int sum = 0;
         int t1 = 0;
@@ -44,7 +48,15 @@ public class Fibonacci
         return forFibonacci;
     }
 
-	public static void main(String[] args) {
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(String[] args) {
+        /**.
+         * { var_description }
+         */
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
