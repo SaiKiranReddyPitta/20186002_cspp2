@@ -34,10 +34,13 @@ public final class Fibonacci {
      * Constructs the object.
      */
     private Fibonacci() {
-    
-    } 
-    /**
-     * Class for fibonacci.
+    }
+    /**.
+     * . Class for fibonacci.
+     *
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public static List fib(final int n) {
         // todo - complete this method
