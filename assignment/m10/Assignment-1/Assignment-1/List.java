@@ -37,7 +37,7 @@ public class List {
     // don't create the array yet using new
     // that's the job of the List constructor
     private int[] list;
-    /**
+    /**.
      * { item_description }
      */
     private static final int TEN = 10;
