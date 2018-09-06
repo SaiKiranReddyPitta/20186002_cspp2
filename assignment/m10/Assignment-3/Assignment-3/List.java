@@ -44,7 +44,7 @@ public class List<E> {
     /**.
      * overloading a constructor.
      */    
-    public List(final int param) {
+    public List( int param) {
         list = ((E[])new Object[param]);
         size = 0;
     }
@@ -56,7 +56,7 @@ public class List<E> {
      *
      * @param      item item is the input parameter.
      */
-    public void add(final E item) {
+    public void add( E item) {
         //Inserts the specified element at the end of the list.
         //You can modify the code in this method.
         if (size < list.length + 1) {
@@ -70,7 +70,7 @@ public class List<E> {
     
     @param      items item is the input parameter.
     */
-    public void addAll(final E[] items) {
+    public void addAll( E[] items) {
         //Write logic for addAll method
         int a = items.length;
         int in = 0;
@@ -104,7 +104,7 @@ public class List<E> {
      *
      * @param      item item is the input parameter.
      */
-    private void resize(final E item) {
+    private void resize( E item) {
         list = Arrays.copyOf(list, list.length * 2);
         list[size++] = item;
     }    
@@ -123,7 +123,7 @@ public class List<E> {
      *
      * @param      idex  idex is the input parameter.
      */
-    public void remove(final int idex) {
+    public void remove( int idex) {
         //Write logic for remove method
         if (idex >= 0 && idex < size) {
             for (int i = idex; i < size - 1; i++) {
@@ -147,7 +147,7 @@ public class List<E> {
      *
      * @return return value.
      */
-    public E get(final int index) {
+    public E get( int index) {
          //Write logic for get method
         if (index < 0 || index >= size) {
             return null;
@@ -192,7 +192,7 @@ public class List<E> {
      *
      * @return     Bool value to be returned.
      */
-    public boolean contains(final E item) {
+    public boolean contains( E item) {
 		//Write logic for contains method
         return indexOf(item) == -1;
     }
@@ -204,7 +204,7 @@ public class List<E> {
      *
      * @return    Index of First occurance.
      */
-    public int indexOf(final E item) {
+    public int indexOf( E item) {
        //Write logic for indexOf method
         int i;
         for (i = 0; i < size; i++) {
