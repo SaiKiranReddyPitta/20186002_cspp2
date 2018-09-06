@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
-	/**.
+class Solution {
+    /**.
      * { function_description }
      *
      * @param args  The arguments
@@ -25,7 +25,7 @@ public class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-	                l.add(tokens[1]);
+                    l.add(tokens[1]);
                 break;
                 case "addAll":
                 if (tokens.length == 2) {
@@ -61,5 +61,5 @@ public class Solution {
                 default:
             }
         }
-	}
+    }
 }
