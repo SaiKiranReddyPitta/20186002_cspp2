@@ -111,7 +111,7 @@ public class List {
      *
      * @param      capacity  The capacity
      */
-    public List(int capacity) {
+    public List(final int capacity) {
         /**
          * { item_description }
          */
@@ -129,7 +129,7 @@ public class List {
      *
      * @param      item  The item
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
         list[size++] = item;
     }
@@ -217,7 +217,7 @@ public class List {
      *
      * @param      index  The index
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if(index >= 0 && index < size) {
@@ -243,7 +243,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int get(int index) {
+    public int get(final int index) {
         if(index < 0 || index >= size) {
             return -1;
         } else {
@@ -290,7 +290,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         return indexOf(item) == -1;
     }
 
@@ -302,7 +302,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for(int i = 0; i < size; i++) {
             if(item == list[i])
                 return i;
@@ -310,7 +310,7 @@ public class List {
         return -1;
     }
    /* Inserts all the elements of specified int array to the end of list */
-    public void addAll(int items[])
+    public void addAll(final int items[])
     /**
      * { item_description }
      */
@@ -338,7 +338,7 @@ public class List {
       @param      index  The index
       @param      item   The item
      */
-    public void add(int index,int item) {
+    public void add(final int index,int item) {
          // write the logic
         if (index >= 0 && size < list.length) {
             for (int j = size - 1; j >= index; j--) {
@@ -360,7 +360,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int item)
+    public int count(final int item)
     {
          // write the logic 
         int count = 0;
@@ -377,7 +377,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
