@@ -310,16 +310,15 @@ public class List {
         return -1;
     }
    /* Inserts all the elements of specified int array to the end of list */
-    public void addAll(final int items[])
+    public void addAll(final int items[]) {
     /**
      * { item_description }
      */
-    {
         // write the logic
         int a = items.length;
         int in = 0;
-        if ((size + a) <= list.length){
-            for (int j = size; j<(size + a); j++) {
+        if ((size + a) <= list.length) {
+            for (int j = size; j < (size + a); j++) {
                 list[j] = items[in];
                 in += 1;
             }
@@ -330,15 +329,13 @@ public class List {
             }
         }
     }
-
      /**
       Inserts the specified element at the specified index by moving all the
       elements to the right. The method returns void (nothing)
-     
       @param      index  The index
       @param      item   The item
      */
-    public void add(final int index,int item) {
+    public void add(final int index, final int item) {
          // write the logic
         if (index >= 0 && size < list.length) {
             for (int j = size - 1; j >= index; j--) {
@@ -350,19 +347,17 @@ public class List {
             System.out.println("Negative Index Exception");
         } else {
             System.out.println("List is full");
-        } 
+        }
     }
-    
-    /**
+    /**.
      * Returns the count of occurances of a given item in the list
      *
      * @param      item  The item
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(final int item)
-    {
-         // write the logic 
+    public int count(final int item) {
+         // write the logic.
         int count = 0;
         for (int a = 0; a < size; a++) {
             if (list[a] == item) {
@@ -372,7 +367,7 @@ public class List {
     }
 
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
