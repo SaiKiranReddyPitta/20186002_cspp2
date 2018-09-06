@@ -40,7 +40,10 @@ public class List {
     /**
      * { item_description }
      */
-
+    private static final int TEN = 10;
+    /**
+     * { item_description }
+     */
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -82,13 +85,12 @@ public class List {
         /**
          * { item_description }
          */
-
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new int[10];
+        list = new int[TEN];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
@@ -168,7 +170,7 @@ public class List {
      * Will the client invoke resize or is it internal to List class?
      * Should the resize be public method or private?
      * Should the resize method return any values?
-     * You know enough of Object Oriented 
+     * You know enough of Object Oriented
      * Programming to answer these questions :-)
      *
      */
@@ -299,8 +301,9 @@ public class List {
      */
     public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]) {
                 return i;
+            }
         }
         return -1;
     }
