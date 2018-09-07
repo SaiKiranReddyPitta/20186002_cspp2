@@ -342,7 +342,7 @@ public class List {
             }
         }
         if (j == list.size()) {
-            f = false;
+            f = true;
         }
         return f;
     }
