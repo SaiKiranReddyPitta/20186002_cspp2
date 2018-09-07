@@ -86,7 +86,7 @@ public class List {
      *
      * The method returns void (nothing)
      */
-    public void add(final int item) {
+    public void add(int item) {
         //Inserts the specified element at the end of the list.
         list[size++] =item;
     }
@@ -120,7 +120,7 @@ public class List {
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
      */
-    public void remove(final int index) {
+    public void remove(int index) {
         // write the logic for remove here. Think about what to do to the size
         // variable.
         if (index >= 0 && index < size) {
