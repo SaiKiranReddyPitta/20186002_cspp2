@@ -70,7 +70,7 @@ public class List {
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
         // initialized with an array size like 10
-        list =new int[10];
+        list = new int[10];
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
@@ -102,11 +102,16 @@ public class List {
         // replace the code below to implement the size method
         return size;
     }
+    /**.
+     * { If necessary, it increases the size of List. }
+     *
+     * @param      item  it is present length but we are making it twice.
+     */
     private void resize(final int item) {
         this.list = Arrays.copyOf(this.list, list.length * 2);
         list[size++] = item;
     }
-    /*
+    /**.
      * The remove method does what the name suggests. Removes an int item,
      * specified by the index argument, from the list It also does an additional
      * step. Think about what happens when an item is removed from the middle of
@@ -119,8 +124,9 @@ public class List {
      * removed item, to the left So, the new array looks like this. array =
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
+     * @param      index  using index, we are removing Integers.
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here. Think about what to do to the size
         // variable.
         if (index >= 0 && index < size) {
@@ -149,7 +155,7 @@ public class List {
      */
     public int get(final int index) {
         // Replace the code below to write the code for get
-        if(index < 0 || index >= size) {
+        if (index < 0 || index >= size) {
             return -1;
         } else {
             return list[index];
@@ -186,7 +192,7 @@ public class List {
                 str += "\nInvalid Position Exception";
             }*/
         return str;
-    } 
+    }
     /**.
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
@@ -215,7 +221,7 @@ public class List {
     public int indexOf(final int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
-            if(item == list[i]) {
+            if (item == list[i]) {
                 return i;
             }
         }
