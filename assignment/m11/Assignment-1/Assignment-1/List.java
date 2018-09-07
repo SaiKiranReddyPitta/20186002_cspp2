@@ -134,7 +134,7 @@ public class List {
        /* System.out.println("["+index+"]");*/
     }
 
-    /*
+    /**.
      * Get method has to return the items that is at the index position passed
      * as an argument to the method. If the item doesn't exist then return a -1
      * to indicate that there is no element at that index. How can an element
@@ -142,6 +142,10 @@ public class List {
      * the number of items in the list then that would mean the item doesn't
      * exist. How do we check if the position is greater than the number of
      * items in the list? Would size variable be useful?
+     *
+     * @param      index  to get via index
+     *
+     * @return     { description_of_the_return_value }
      */
     public int get(int index) {
         // Replace the code below to write the code for get
@@ -152,7 +156,7 @@ public class List {
         }
     }
 
-    /*
+    /**.
      * What happens when you print an object using println? Java provides a
      * method named toString that is internally invoked when an object variable
      * is used in println. For example: List l = new List();
@@ -164,6 +168,8 @@ public class List {
      * the string [1,2,3] Caution: The array may be having other elements
      * Example: [1,2,3,0,0,0,0,0,0,0] toString should only return the items in
      * the list and not all the elements of the array.
+     *
+     * @return String representation of the object.
      */
     public String toString() {
         // Replace the code below
@@ -181,10 +187,14 @@ public class List {
             }*/
         return str;
     } 
-    /*
+    /**.
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
      * exists and otherwise false
+     *
+     * @param      item  Whether it contains or not.
+     *
+     * @return     {It returns true when that element contains.}
      */
     public boolean contains(int item) {
         // Replace the code below
@@ -194,9 +204,13 @@ public class List {
         }
         return false;
     }
-    /*
+    /**.
      * Returns the index of the first occurrence of the specified element in
      * this list, or -1 if this list does not contain the element.
+     *
+     * @param      item  it returns the required element using index.
+     *
+     * @return     { returns the element using index. }
      */
     public int indexOf(int item) {
         // Replace the code below
@@ -206,8 +220,10 @@ public class List {
         }
         return -1;
     }
-    /*
-    Inserts all the elements of specified int array to the end of list    
+    /**.
+    Inserts all the elements of specified int array to the end of list
+    
+    @param      newArray  It adds into list.
     */
     public void addAll(final int[] newArray) {
         // write the logic
@@ -225,9 +241,9 @@ public class List {
             }
         }
     }
-    /**
+    /**.
      Removes all of its elements that are contained in the specified int array.
-    
+
      @param      newArray  Here we wrote code to remove given elements.
     */
      public void removeAll(final int[] newArray) {
