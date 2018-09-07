@@ -302,7 +302,7 @@ public class List {
     and also if start is greater than end.
     */
     public List subList(final int start, final int end) {
-        while (end - start >= 0) {
+        while (end - start > 0) {
             int[] list = new int[end - start];
             List newlist = new List();
             if ((start == end) && (start < 0 && end < 0)) {
