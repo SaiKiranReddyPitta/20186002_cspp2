@@ -40,7 +40,7 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
-    /**
+    /**.
      * { about size of int }
      */
     private int size;
@@ -437,7 +437,7 @@ public class List {
                         l.removeAll(a);
                     }
                 break;
-                case "subList": {
+                case "subList":
                     if (tokens.length != 2) {
                      break;
                     }
@@ -448,7 +448,6 @@ public class List {
                         System.out.println(object);
                     }
                     break;
-                }
                 case "equals":
                     if (tokens.length == 2) {
                         String[] lt = tokens[1].split(",");
