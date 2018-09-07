@@ -77,26 +77,29 @@ public class List {
         // That is the initial value to use for size.
 
     }
-    
-    /*
+
+    /**.
      * The add method does what the name suggests. Add an int item to the list.
      * The assumption is to store the item at the end of the list What is the
      * end of the list? Is it the same as the end of the array? Think about how
      * you can use the size variable to add item to the list.
      *
      * The method returns void (nothing)
+     *
+     * @param      item  to add integers into list.
      */
     public void add(int item) {
         //Inserts the specified element at the end of the list.
         list[size++] =item;
     }
 
-    /*
+    /**.
      * The size method returns the value of the size. The purpose of the method
      * is to announce the size of the list to the objects outside the list
      *
      * The method returns an int. Empty list should return 0.
      *
+     * @return returns the size.
      */
     public int size() {
         // replace the code below to implement the size method
