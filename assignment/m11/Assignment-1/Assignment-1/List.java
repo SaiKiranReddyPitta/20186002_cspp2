@@ -325,6 +325,7 @@ public class List {
             }
             return newlist;
         }
+
         System.out.println("Index Out of Bounds Exception");
         return null;
     }
