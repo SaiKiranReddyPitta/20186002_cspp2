@@ -28,7 +28,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    private static final int TEN = 10;
+    private static final int TWENTY = 20;
     private int[] a;
     // declare a private int[]
     // don't create the array yet using new
@@ -72,7 +72,7 @@ public class List {
         // In the case of the list, it should be
         // empty but it should be
         // initialized with an array size like 10
-        a = new int[TEN];
+        a = new int[TWENTY];
         i = 0;
         // Think about the initial value for size.
         // How many items do we have in the list when
@@ -100,7 +100,7 @@ public class List {
      */
     public void add(final int item) {
         //Inserts the specified element at the end of the list.
-        if (i < TEN) {
+        if (i < TWENTY) {
             a[i] = item;
             i += 1;
         }   else {
