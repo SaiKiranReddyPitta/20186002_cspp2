@@ -86,7 +86,7 @@ public class List {
      *
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the list.
         list[size++] =item;
     }
@@ -120,7 +120,7 @@ public class List {
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here. Think about what to do to the size
         // variable.
         if (index >= 0 && index < size) {
@@ -147,7 +147,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
         if(index < 0 || index >= size) {
             return -1;
@@ -196,7 +196,7 @@ public class List {
      *
      * @return     {It returns true when that element contains.}
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         // Replace the code below
         /*return indexOf(item) == -1;*/
         if (indexOf(item) >= 0) {
@@ -212,17 +212,18 @@ public class List {
      *
      * @return     { returns the element using index. }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         // Replace the code below
-        for(int i = 0; i < size; i++) {
-            if(item == list[i])
+        for (int i = 0; i < size; i++) {
+            if(item == list[i]) {
                 return i;
+            }
         }
         return -1;
     }
     /**.
     Inserts all the elements of specified int array to the end of list
-    
+
     @param      newArray  It adds into list.
     */
     public void addAll(final int[] newArray) {
