@@ -44,8 +44,6 @@ public class List {
      * { about size of int }
      */
     private int size;
-    private final int TEN = 10;
-
     /**
      * It's about size of list.
      */
@@ -77,11 +75,11 @@ public class List {
      * The purpose of the constructor is to initialize the class variables with
      * some default values.
      */
+    public static final int TEN = 10;
     /**
      * It takes the size of list.
      */
     public List() {
-    //final int TEN = 10;
         // what are the two variables to be initialized here? think about the
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
