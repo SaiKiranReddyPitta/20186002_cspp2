@@ -6,6 +6,9 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
 
+/**
+ * List of Integers.
+ */
 public class List {
     //Implement all the methods mentioned to build a ListADT
 
@@ -29,13 +32,18 @@ public class List {
      * will protect the array such corruption.
      * This is a hard concept to understand. Discuss with your mentor.
      *
-    */
+     */
+    /**
+     * { creating an integer list }
+     */
     private int[] list;
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
     private int size;
+    /**
+     * It's about size of list.
+     */
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -53,7 +61,7 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
@@ -64,13 +72,16 @@ public class List {
      * The purpose of the constructor is to initialize the class variables with
      * some default values.
      */
+    /**
+     * It takes the size of list.
+     */
     public List() {
-
+    final int TEN = 10;
         // what are the two variables to be initialized here? think about the
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
         // initialized with an array size like 10
-        list = new int[10];
+        list = new int[TEN];
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
@@ -88,9 +99,9 @@ public class List {
      *
      * @param      item  to add integers into list.
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the list.
-        list[size++] =item;
+        list[size++] = item;
     }
 
     /**.
