@@ -153,7 +153,7 @@ public class List<E> {
             return null;
         } else {
             return list[index];
-        }        
+        }
     }
     /**.
      * What happens when you print an object using println? Java provides a
