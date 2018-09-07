@@ -209,8 +209,7 @@ public class List {
     /*
     Inserts all the elements of specified int array to the end of list    
     */
-    public void addAll(final int[] newArray)
-    {
+    public void addAll(final int[] newArray) {
         // write the logic
         int a = newArray.length;
         int in = 0;
@@ -226,11 +225,12 @@ public class List {
             }
         }
     }
-    /*
-     Removes all of its elements that are contained in the specified int 
-     array.    
+    /**
+     Removes all of its elements that are contained in the specified int array.
+    
+     @param      newArray  Here we wrote code to remove given elements.
     */
-     public void removeAll(int[] newArray) {
+     public void removeAll(final int[] newArray) {
         // write the logic
        /* for (int i = 0; i < newArray.length; i++) {
             for (int j = 0; j < this.size(); j++) {
