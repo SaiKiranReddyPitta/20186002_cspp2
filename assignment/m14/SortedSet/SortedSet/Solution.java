@@ -38,6 +38,8 @@ class Set {
     }
     /**
      * This return String representation of the object.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         /**.
