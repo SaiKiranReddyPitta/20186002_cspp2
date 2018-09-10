@@ -40,6 +40,9 @@ class Set {
      * This return String representation of the object.
      */
     public String toString() {
+        /**.
+         * { item_description }
+         */
         if (size == 0) {
             return "{}";
         } else {
