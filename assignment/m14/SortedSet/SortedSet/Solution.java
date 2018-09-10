@@ -1,11 +1,15 @@
 /**
  * Class for set.
- * @author : Sai Kiran Reddy Pitta.
+ * @author     : Sai Kiran Reddy Pitta.
  */
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**.
+ */
 class Set {
+    /**.
+     */
     //your code goes here...
     //Good luck :-)
     /**
