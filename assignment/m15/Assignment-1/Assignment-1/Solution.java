@@ -2,32 +2,34 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
 
-/**
+/**.
  * List of.
  * @author : Sai Kiran Reddy Pitta.
  */
 
+/**.
+ * defining solution class. 
+ */
 public class Solution {
     private int[] list;
     private int size;
-    // declare a private int size
+    // declaring a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
 
-    /*
-     * The purpose of the constructor is to initialize the class variables with
-     * some default values.
+    /**.
+     *The purpose of the constructor is to initialize the class variables with some default values.
      */
-    /**
-    *@variable TEN variable.
-    */
     private static final int TEN = 10;
+    /**.
+     * here, we are initializing.
+     */
     public Solution() {
         list = new int[TEN];
         size = 0;
 
     }
-    /**
+    /**.
      * The add method does what the name suggests. Add an int item to the list.
      * The assumption is to store the item at the end of the list What is the
      * end of the list? Is it the same as the end of the array? Think about how
@@ -36,17 +38,17 @@ public class Solution {
      * The method returns void (nothing)
      */
 
-    /**
-     * adds elements.
+    /**.
+     * adds item.
      *
-     * @param      item  The item
+     * @param item  The item
      */
     public void add(final int item) {
 
         //Inserts the specified element at the end of the zelist
         list[size++] = item;
     }
-    /**
+    /**.
      * The size method returns the value of the size. The purpose of the method
      * is to announce the size of the list to the objects outside the list
      *
@@ -60,7 +62,7 @@ public class Solution {
         return size;
     }
 
-    /**
+    /**.
      * @param      index  The index
      */
     public void remove(final int index) throws Exception {
@@ -74,7 +76,7 @@ public class Solution {
         }
     }
 
-    /**
+    /**.
      * @param      index  The index
      *
      * @return     { description_of_the_return_value }
@@ -89,7 +91,7 @@ public class Solution {
         }
     }
 
-    /**
+    /**.
      * @return     String representation of the object.
      */
    public String toString() {
@@ -109,7 +111,7 @@ public class Solution {
             }*/
         return s;
     }
-    /**
+    /**.
      * @param      item  The item
      *
      * @return     { description_of_the_return_value }
@@ -118,7 +120,7 @@ public class Solution {
 
         return indexOf(item) == -1;
     }
-    /**
+    /**.
      * Returns the index of the first occurrence of the specified element in
      * this list, or -1 if this list does not contain the element.
      *
@@ -135,7 +137,7 @@ public class Solution {
         }
         return -1;
     }
-    /**
+    /**.
     Inserts all the elements of specified int array to the end of list.
     @param      item  The item
     */
@@ -144,7 +146,7 @@ public class Solution {
         this.list = Arrays.copyOf(this.list, list.length * 2);
         list[size++] = item;
     }
-    /**
+    /**.
      * Adds all.
      *
      * @param      newArray  The new array
@@ -165,7 +167,7 @@ public class Solution {
             }
         }
     }
-    /**
+    /**.
      Removes all of its elements that are contained in the specified int array.
      @param      newArray  The new array
     */
@@ -197,7 +199,7 @@ public class Solution {
             return 0;
         }
      }
-    /**
+    /**.
     Returns a list object containing elements, including startIndex and
     excluding endIndex. The first parameter indicates the startIndex and the
     second parameter indicates the endIndex. Returns null and print
@@ -225,7 +227,7 @@ public class Solution {
         /*System.out.println("Index Out of Bounds Exception");*/
         return null;
     }
-    /**
+    /**.
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     @param      list1  The list.
@@ -236,7 +238,7 @@ public class Solution {
     // Replace the code below
         return list1.toString().equals(this.toString());
 }
-    /**
+    /**.
     * Removes all the elements from list
     * Think about this case and make the method
     * the simpler.
@@ -247,7 +249,7 @@ public class Solution {
 
     }
 
-    /**
+    /**.
      * this is main.
      *
      * @param      args  The arguments
