@@ -223,12 +223,9 @@ public class Solution {
     second parameter indicates the endIndex. Returns null and print
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
-    
     @param      start      The start
     @param      end        The end
-    
-    @return     it returns new list 
-    
+    @return     it returns new list.
     @throws     Exception  Using exception as indicated in question
     */
     public Solution subList(final int start, final int end) throws Exception {
