@@ -11,8 +11,11 @@ import java.util.Arrays;
  * . defining solution class.
  */
 public class Solution {
-    private int[] list;
     /**
+     * defining solution class.
+     */
+    private int[] list;
+    /**.
      * { declaring list datatype }
      */
     private int size;
@@ -21,7 +24,7 @@ public class Solution {
     // variable initialization should be done in the constructor
 
     /**.
-     *The purpose of the constructor is to initialize 
+     *The purpose of the constructor is to initialize
      *the class variables with some default values.
      */
     private static final int TEN = 10;
@@ -194,7 +197,7 @@ public class Solution {
             }
         }
      }
-    /**
+    /**.
      * { function_description }
      *
      * @param      item  The item
