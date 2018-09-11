@@ -7,18 +7,22 @@ import java.util.Arrays;
  * @author : Sai Kiran Reddy Pitta.
  */
 
-/**.
- * defining solution class. 
+/**
+ * . defining solution class.
  */
 public class Solution {
     private int[] list;
+    /**
+     * { declaring list datatype }
+     */
     private int size;
     // declaring a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
 
     /**.
-     *The purpose of the constructor is to initialize the class variables with some default values.
+     *The purpose of the constructor is to initialize 
+     *the class variables with some default values.
      */
     private static final int TEN = 10;
     /**.
@@ -62,8 +66,12 @@ public class Solution {
         return size;
     }
 
-    /**.
-     * @param      index  The index
+    /**
+     * .
+     *
+     * @param      index      The index
+     *
+     * @throws     Exception  Writing exception
      */
     public void remove(final int index) throws Exception {
         if (index >= 0 && index < size) {
@@ -72,7 +80,7 @@ public class Solution {
             }
             size--;
         } else {
-            throw new Exception ("Invalid Position Exception");
+            throw new Exception("Invalid Position Exception");
         }
     }
 
@@ -179,17 +187,27 @@ public class Solution {
             while (index != -1) {
                 try {
                     remove(i);
-                } catch(Exception ex){
+                } catch (Exception ex) {
                     System.out.println(ex.getMessage());
                 }
                 index = indexOf(newArray[i]);
             }
         }
      }
+    /**
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     it returns count.
+     */
     public int count(final int item) {
-        if(this.list.length > 0) {
+        /**
+         * we will return count.
+         */
+        if (this.list.length > 0) {
             int count = 0;
-            for (int i = 0;i < size(); i++) {
+            for (int i = 0; i < size(); i++) {
                 if (item == this.list[i]) {
                     count += 1;
                 }
@@ -199,15 +217,19 @@ public class Solution {
             return 0;
         }
      }
-    /**.
-    Returns a list object containing elements, including startIndex and
+    /**
+    . Returns a list object containing elements, including startIndex and
     excluding endIndex. The first parameter indicates the startIndex and the
     second parameter indicates the endIndex. Returns null and print
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
-    @param      start  The start
-    @param      end    The end
-    @return     { description_of_the_return_value }
+    
+    @param      start      The start
+    @param      end        The end
+    
+    @return     it returns new list 
+    
+    @throws     Exception  Using exception as indicated in question
     */
     public Solution subList(final int start, final int end) throws Exception {
 
@@ -284,11 +306,11 @@ public class Solution {
                     System.out.println(l);
                 break;
                 case "remove":
-                try{
+                try {
                     if (tokens.length == 2) {
                         l.remove(Integer.parseInt(tokens[1]));
                     }
-                } catch(Exception ex) {
+                } catch (Exception ex) {
                     System.out.println(ex.getMessage());
                 }
                 break;
@@ -331,7 +353,7 @@ public class Solution {
                     }
                 break;
                 case "subList":
-                try{
+                try {
                     if (tokens.length != 2) {
                         break;
                     }
@@ -341,7 +363,7 @@ public class Solution {
                     if (object != null) {
                         System.out.println(object);
                     }
-                } catch(Exception ex) {
+                } catch (Exception ex) {
                     System.out.println(ex.getMessage());
                 }
                     break;
