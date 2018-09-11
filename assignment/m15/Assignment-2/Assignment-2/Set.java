@@ -6,31 +6,27 @@ import java.util.Scanner;
 
 public class Set {
 
-    /**
+    /**.
      * This constant is used to create an array
      * with the initial capacity.
      */
     public static final int TEN = 10;
-
-    /**
+    /**.
      * holds the elemtns in this Set array.
      */
     public int[] set;
-
-    /**
+    /**.
      * indicates the number of elememnts of this set.
      */
     public int size;
-
-    /**
+    /**.
      * Default constructor to create an array with the szie 10.
      */
     public Set() {
         set = new int[TEN];
         size = 0;
     }
-
-    /**
+    /**.
      * add the item to this set at the last.
      * If the set is full, resize the set to double
      * the size of the current set.
@@ -44,15 +40,13 @@ public class Set {
             set[size++] = item;
         }
     }
-
-    /**
+    /**.
      * resize the set by double, when it is full.
      */
     private void resize() {
         set = java.util.Arrays.copyOf(set, size * 2);
     }
-
-    /**
+    /**.
      * add all elements of the array to this Set.
      * @param arr as an arr to be added in this set,
      *            if the element is not present in this set.
@@ -62,8 +56,7 @@ public class Set {
             add(arr[i]);
         }
     }
-
-    /**
+    /**.
      * Finds the intersection of the two sets.
      * @param  other as set 2.
      * @return the result that contains the common
@@ -78,8 +71,7 @@ public class Set {
         }
         return result;
     }
-
-    /**
+    /**.
      * retains all the elements from the set.
      * @param  arr is a form of set2.
      * @return the set that contains all the elements
@@ -92,8 +84,7 @@ public class Set {
         }
         return intersection(other);
     }
-
-    /**
+    /**.
      * This finds out the cartesian product of two sets.
      * @param  other as a Set 2.
      * @return the cartesian product in the form of 2D array.
@@ -112,16 +103,14 @@ public class Set {
         }
         return result;
     }
-
-    /**
+    /**.
      * This methods finds out the number of elements in the set.
      * @return the integer value indicates the number of elements.
      */
     public int size() {
         return size;
     }
-
-    /**
+    /**.
      * This method finds out the elements
      * at a particular index.
      * @param  index to return the element at this index.
@@ -134,8 +123,7 @@ public class Set {
             return set[index];
         }
     }
-
-    /**
+    /**.
      * String version of the object.
      * @return string.
      */
@@ -150,8 +138,7 @@ public class Set {
         sb.append(set[size - 1] + "}");
         return sb.toString();
     }
-
-    /**
+    /**.
      * returns true if this set contains the item.
      * @param  item as a parameter to be checked in the set.
      * @return      true if the item present in the set,
@@ -160,8 +147,7 @@ public class Set {
     public boolean contains(final int item) {
         return indexOf(item) != -1;
     }
-
-    /**
+    /**.
      * Finds the index of the item in this set.
      * @param  item to be find in this set.
      * @return the index if the item is found in this set,

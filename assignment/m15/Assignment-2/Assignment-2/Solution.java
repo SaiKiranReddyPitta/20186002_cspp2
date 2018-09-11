@@ -1,31 +1,31 @@
 /**.
- * Class for Sorted set.
  * @author : Sai Kiran Reddy Pitta.
  */
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ *It's a Class for sorted set.
+ */
 class SortedSet extends Set  {
-    /**
-     * sort function.
-     *
+    /**.
+     * It is a sort function.
      * @param      array  The array
      */
     public void sort(final int[] array) {
-        int t;
+        int a;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (array[i] > array[j]) {
-                    t = array[i];
+                    a = array[i];
                     array[i] = array[j];
-                    array[j] = t;
+                    array[j] = a;
                 }
             }
         }
     }
     /**
-     * add function.
-     *
+     *It is a add function.
      * @param      item  The item
      */
     public void add(final int item) {
@@ -35,13 +35,10 @@ class SortedSet extends Set  {
         sort(set);
     }
     /**
-     * subset.
-     *
+     *It is a subset.
      * @param      start      The start
      * @param      end        The end
-     *
      * @return     from start to end returns elements.
-     *
      * @throws     Exception  {Invalid Arguments to Subset Exception }
      */
     public int[] subSet(final int start, final int end) throws Exception {
@@ -65,12 +62,9 @@ class SortedSet extends Set  {
         }
     }
     /**
-     * headset function.
-     *
+     *It is a headset function.
      * @param      end        The end
-     *
      * @return     returms elements.
-     *
      * @throws     Exception  { set empty exception }
      */
     public int[] headSet(final int end) throws Exception {
@@ -89,11 +83,9 @@ class SortedSet extends Set  {
     }
         return Arrays.copyOf(result, temp);
     }
-    /**
-     * last function.
-     *
+    /**.
+     * It is a last function.
      * @return     returns list of elements.
-     *
      * @throws     Exception  set empty Exception
      */
     public int last() throws Exception {
@@ -104,8 +96,8 @@ class SortedSet extends Set  {
         }
         return set[size - 1];
     }
-    /**
-     * Adds all.
+    /**.
+     * It is a Adds all.
      *
      * @param      element  The element
      */
@@ -115,21 +107,19 @@ class SortedSet extends Set  {
         }
     }
 }
-/**
- * Solution class.
+/**.
+ *It is a Solution class.
  */
 public final class Solution {
-    /**
+    /**.
      * Constructs the object.
      */
     private Solution() {
 
     }
-    /**
+    /**.
      * helper function which convert string input to int array.
-     *
      * @param      s     { string input from test case file }
-     *
      * @return     { int array from the given string }
      */
     public static int[] intArray(final String s) {
@@ -144,9 +134,8 @@ public final class Solution {
                .mapToInt(Integer::parseInt)
                .toArray();
     }
-    /**
+    /**.
      * main function to execute test cases.
-     *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
