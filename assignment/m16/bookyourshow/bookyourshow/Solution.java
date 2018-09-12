@@ -171,7 +171,7 @@ class Patron {
      * this is a class called patron.
      */
     private String name;
-    /**
+    /**.
      * String name
      */
     private String mobile;
