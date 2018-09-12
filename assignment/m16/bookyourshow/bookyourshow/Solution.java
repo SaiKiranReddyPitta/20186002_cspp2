@@ -92,8 +92,25 @@ class Show {
      * creating variables to get desired output.
      */
     private String movie;
+    /**
+     * string movie name
+     */
     private String showTime;
+    /**
+     * string showtime details
+     */
     private String[] seats;
+    /**
+     * string array seat
+     */
+
+    /**
+     * Constructs the object.
+     *
+     * @param      moviea     The moviea
+     * @param      showTimea  The show timea
+     * @param      seat       The seat
+     */
     Show(final String moviea, final String showTimea, final String[] seat) {
         /**
          * using parameters movi, showTim, seat
@@ -102,15 +119,35 @@ class Show {
         this.showTime = showTimea;
         this.seats = seat;
     }
+    /**
+     * Gets the movie.
+     *
+     * @return     The movie.
+     */
     String getMovie() {
         return movie;
     }
+    /**
+     * Gets the show time.
+     *
+     * @return     The show time.
+     */
     String getShowTime() {
         return showTime;
     }
+    /**
+     * Gets the seats.
+     *
+     * @return     The seats.
+     */
     String[] getSeats() {
         return seats;
     }
+    /**
+     * Sets the seat na.
+     *
+     * @param      index  The index
+     */
     void setSeatNA(final int index) {
         seats[index] = "N/A";
     }
@@ -135,9 +172,15 @@ class Patron {
      */
     private String name;
     private String mobile;
+    /**
+     * Constructs the object.
+     *
+     * @param      name1     The name 1
+     * @param      mobilnum  The mobilnum
+     */
     Patron(final String name1, final String mobilnum) {
         /**
-         * here we use parameters name1 and mobilnum. 
+         * here we use parameters name1 and mobilnum.
          */
         this.name = name1;
         this.mobile = mobilnum;
@@ -188,7 +231,13 @@ class BookYourShow {
      * Class bookyourshow.
      */
     private ArrayList<Show> showList;
+    /**
+     * show generic.
+     */
     private ArrayList<String> ticketList;
+    /**
+     * ticketlist generic.
+     */
     BookYourShow() {
         showList = new ArrayList<>();
         ticketList = new ArrayList<>();
