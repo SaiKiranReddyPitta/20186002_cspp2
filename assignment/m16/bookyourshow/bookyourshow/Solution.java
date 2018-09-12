@@ -83,14 +83,23 @@ public final class Solution {
         }
     }
 }
+/**
+ * Class for show.
+ */
 class Show {
 
+    /**
+     * creating variables to get desired output.
+     */
     private String movie;
     private String showTime;
     private String[] seats;
-    Show(final String movi, final String showTim, final String[] seat) {
-        this.movie = movi;
-        this.showTime = showTim;
+    Show(final String moviea, final String showTimea, final String[] seat) {
+        /**
+         * using parameters movi, showTim, seat
+         */
+        this.movie = moviea;
+        this.showTime = showTimea;
         this.seats = seat;
     }
     String getMovie() {
@@ -105,17 +114,31 @@ class Show {
     void setSeatNA(final int index) {
         seats[index] = "N/A";
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
+        /**
+         * to string method.
+         */
         return movie + "," + showTime;
     }
 }
-/**.
- * Class for patron .
+/**
+ * . Class for patron .
  */
 class Patron {
+    /**
+     * this is a class called patron.
+     */
     private String name;
     private String mobile;
     Patron(final String name1, final String mobilnum) {
+        /**
+         * here we use parameters name1 and mobilnum. 
+         */
         this.name = name1;
         this.mobile = mobilnum;
     }
@@ -153,14 +176,17 @@ class Patron {
         return name + " " + mobile;
     }
 }
-/**.
- * Class for book your show which helps in booking.
+/**
+ * . Class for book your show which helps in booking.
  */
 class BookYourShow {
     /**.
      * used to book a show.
      */
 
+    /**
+     * Class bookyourshow.
+     */
     private ArrayList<Show> showList;
     private ArrayList<String> ticketList;
     BookYourShow() {
@@ -199,7 +225,8 @@ class BookYourShow {
         return null;
     }
     /**.
-     * used in creating a show using parameters such as movie name, showtime, etc.
+     * used in creating a show using parameters
+     * such as movie name, showtime, etc.
      *
      * @param      movie     The movie
      * @param      showTime  The show time
