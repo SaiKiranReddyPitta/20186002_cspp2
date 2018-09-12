@@ -92,11 +92,11 @@ class Show {
      * creating variables to get desired output.
      */
     private String movie;
-    /**
+    /**.
      * string movie name
      */
     private String showTime;
-    /**
+    /**.
      * string showtime details
      */
     private String[] seats;
@@ -171,7 +171,13 @@ class Patron {
      * this is a class called patron.
      */
     private String name;
+    /**
+     * String name
+     */
     private String mobile;
+    /**
+     * string mobile number
+     */
     /**
      * Constructs the object.
      *
