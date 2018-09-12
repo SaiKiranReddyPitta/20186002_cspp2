@@ -2,12 +2,37 @@
  * @author : Sai Kiran Reddy Pitta.
  */
 import java.util.Scanner;
+/**
+ * importing to use scanner.
+ */
 import java.util.ArrayList;
+/**
+ * to use array lists.
+ */
 import java.util.Arrays;
+/**
+ * to use array function.
+ */
+
 public final class Solution {
+
+    /**
+     * used to create constructor.
+     */
     private Solution() {
+        /**
+         * Solution constructor.
+         */
     }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+        /**
+         * main function.
+         */
         BookYourShow bys = new BookYourShow();
         Scanner scan = new Scanner(System.in);
         int testCases = Integer.parseInt(scan.nextLine());
@@ -84,6 +109,9 @@ class Show {
         return movie + "," + showTime;
     }
 }
+/**.
+ * Class for patron .
+ */
 class Patron {
     private String name;
     private String mobile;
@@ -91,17 +119,47 @@ class Patron {
         this.name = name1;
         this.mobile = mobilnum;
     }
+    /**.
+     * Gets the name of movie.
+     *
+     * @return     The name.
+     */
     String getName() {
+        /**.
+         * to get movie name.
+         */
         return name;
     }
+    /**.
+     * Gets the mobile number.
+     *
+     * @return     The mobile.
+     */
     String getMobile() {
+        /**.
+         * used to get mobile number.
+         */
         return mobile;
     }
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
+        /**.
+         * to string function.
+         */
         return name + " " + mobile;
     }
 }
+/**.
+ * Class for book your show which helps in booking.
+ */
 class BookYourShow {
+    /**.
+     * used to book a show.
+     */
 
     private ArrayList<Show> showList;
     private ArrayList<String> ticketList;
@@ -109,10 +167,29 @@ class BookYourShow {
         showList = new ArrayList<>();
         ticketList = new ArrayList<>();
     }
+    /**.
+     * Adds a show function used to add.
+     *
+     * @param      show  The show
+     */
     void addAShow(final Show show) {
+        /**.
+         * used to add show.
+         */
         showList.add(show);
     }
+    /**.
+     * Gets a show used to get data.
+     *
+     * @param      movie     The movie
+     * @param      showTime  The show time
+     *
+     * @return     A show.
+     */
     Show getAShow(final String movie, final String showTime) {
+        /**.
+         *  Gets a show used to get data.
+         */
         for (Show show: showList) {
             if (show.getMovie().equals(movie)
             && show.getShowTime().equals(showTime)) {
@@ -121,7 +198,18 @@ class BookYourShow {
         }
         return null;
     }
+    /**.
+     * used in creating a show using parameters such as movie name, showtime, etc.
+     *
+     * @param      movie     The movie
+     * @param      showTime  The show time
+     * @param      patron    The patron
+     * @param      seats     The seats
+     */
     void bookAShow(final String movie, final String showTime,
+        /**.
+         * using parameters such as movie name, showtime.
+         */
     final Patron patron, final String[] seats) {
         Show show = getAShow(movie, showTime);
         if (show == null) {
@@ -143,7 +231,17 @@ class BookYourShow {
                 + " " + movie + " " + showTime);
         }
     }
+    /**.
+     * Used to print tickets.
+     *
+     * @param      movie     The movie
+     * @param      showTime  The show time
+     * @param      mobile    The mobile
+     */
     void printTicket(final String movie, final String showTime,
+        /**.
+         * Function used to print tickets.
+         */
     final String mobile) {
         String t = mobile + " " + movie + " " + showTime;
         if (ticketList.contains(t)) {
@@ -152,7 +250,13 @@ class BookYourShow {
             System.out.println("Invalid");
         }
     }
+    /**.
+     * Shows all is a method, used to show details of movies.
+     */
     void showAll() {
+        /**.
+         * Function used to show details of movies.
+         */
         for (Show show: showList) {
             System.out.println(show.toString() + ","
             + Arrays.toString(show.getSeats()).replace(" ", ""));
