@@ -177,7 +177,7 @@ public final class Solution {
         // store the user respones in the quiz object
 
         for(int i = 0; i < quizCompetition.size(); i++) {
-            System.out.println(quizCompetition.get(i).question+"("+quizCompetition.get(i).maxMarks+")");
+            System.out.println(quizCompetition.get(i).question + "(" + quizCompetition.get(i).maxMarks + ")");
             for(int j = 0; j < quizCompetition.get(i).choices.length; j++) {
                 System.out.print(quizCompetition.get(i).choices[j]);
                 System.out.print("    ");
@@ -213,16 +213,16 @@ public final class Solution {
         for(int i = 0; i < quizCompetition.size(); i++) {
             System.out.println(quizCompetition.get(i).question);
                 if(answersAttempted.get(i).equals(quizCompetition.get(i).correctGuess)) {
-                    System.out.println(" Correct Answer! - Marks Awarded: "+quizCompetition.get(i).maxMarks);
+                    System.out.println(" Correct Answer! - Marks Awarded: " + quizCompetition.get(i).maxMarks);
                     finalScore += Integer.parseInt(quizCompetition.get(i).maxMarks);
                 } else {
-                    System.out.println(" Wrong Answer! - Penalty: "+quizCompetition.get(i).penalityMarks);
+                    System.out.println(" Wrong Answer! - Penalty: " + quizCompetition.get(i).penalityMarks);
                     finalScore += Integer.parseInt(quizCompetition.get(i).penalityMarks);
                     
                 }
     }
-    if(quizCompetition.size() != 0) {
-        System.out.println("Total Score: "+finalScore );
+    if (quizCompetition.size() != 0) {
+        System.out.println("Total Score: " + finalScore );
     }
     }
 }
