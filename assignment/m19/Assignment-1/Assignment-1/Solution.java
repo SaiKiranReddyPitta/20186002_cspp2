@@ -102,16 +102,18 @@ public final class Solution {
                     System.out.println("trick question does not have enough answer choices");
                     return;
                 }
-                if(Integer.parseInt(tokens[3]) < 0){
+                if(Integer.parseInt(tokens[3]) < 0) {
                     System.out.println("Invalid max marks for question about sony");
                     return;
                 }
-                if(Integer.parseInt(tokens[4]) > 0){
-                    System.out.println("Invalid penalty for question about sony");
+                if(Integer.parseInt(tokens[4]) > 0) {
+                    System.out.println
+                    ("Invalid penalty for question about sony");
                     return;
                 }
                 if(!tokens[2].equals("1") && !tokens[2].equals("2") && !tokens[2].equals("3") && !tokens[2].equals("4")) {
-                    System.out.println("Error! Correct answer choice number is out of range for question text 1");
+                    System.out.println
+                    ("Error! Correct answer choice number is out of range for question text 1");
                     return;
                 }
 
@@ -154,7 +156,7 @@ public final class Solution {
             String[] newtoken = line.split(" ");
             if(newtoken[1].equals("a")) {
                 newtoken[1] = "1";
-            } else if (newtoken[1].equals("b") ){
+            } else if (newtoken[1].equals("b") ) {
                 newtoken[1] = "2";
             } else if (newtoken[1].equals("c")) {
                 newtoken[1] = "3";
@@ -176,7 +178,7 @@ public final class Solution {
         int finalScore = 0;
         for(int i=0; i<quizCompetition.size(); i++) {
             System.out.println(quizCompetition.get(i).question);
-                if(answersAttempted.get(i).equals(quizCompetition.get(i).correctGuess)){
+                if(answersAttempted.get(i).equals(quizCompetition.get(i).correctGuess)) {
                     System.out.println(" Correct Answer! - Marks Awarded: "+quizCompetition.get(i).maxMarks);
                     finalScore += Integer.parseInt(quizCompetition.get(i).maxMarks);
                 } else {
@@ -185,7 +187,7 @@ public final class Solution {
                     
                 }
     }
-    if(quizCompetition.size() != 0){
+    if(quizCompetition.size() != 0) {
         System.out.println("Total Score: "+finalScore );
     }
     }
