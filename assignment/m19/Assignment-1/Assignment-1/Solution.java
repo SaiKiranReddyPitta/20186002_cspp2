@@ -3,20 +3,48 @@ import java.util.Scanner;
  * Solution class for code-eval.
  */
 import java.util.ArrayList;
-/**.
- * using ArrayList.
+/**
+ * . using ArrayList.
  */
-class Quiz{
-    String correctGuess;
-    String penalityMarks;
-    String maxMarks;
-    String question;
-    String[] choices;
+class Quiz {
 
+    String correctGuess;
+    /**
+     * { correctGuess }
+     */
+    String penalityMarks;
+    /**
+     * { penalityMarks }
+     */
+    String maxMarks;
+    /**
+     * { maxMarks }
+     */
+    String question;
+    /**
+     * { question }
+     */
+    String[] choices;
+    /**
+     * Constructs the object.
+     */
+
+    /**
+     * Constructs the object.
+     */
     Quiz() {
 
     }
 
+    /**
+     * Constructs the object.
+     *
+     * @param      question       The question
+     * @param      choices        The choices
+     * @param      correctGuess   The correct guess
+     * @param      maxMarks       The maximum marks
+     * @param      penalityMarks  The penality marks
+     */
     Quiz(String question, String[] choices, String correctGuess, String maxMarks, String penalityMarks) {
         this.question = question;
         this.choices = choices;
@@ -28,7 +56,13 @@ class Quiz{
 }   
 public final class Solution {
     static ArrayList<String> answersAttempted = new ArrayList<String>();
+    /**
+     * { var_description }
+     */
     static ArrayList<Quiz> quizCompetition = new ArrayList<Quiz>();
+    /**
+     * { item_description }
+     */
      /**
      * Constructs the object.
      */
@@ -142,7 +176,7 @@ public final class Solution {
         // read the user responses from the console
         // store the user respones in the quiz object
 
-        for(int i=0; i<quizCompetition.size(); i++){
+        for(int i=0; i<quizCompetition.size(); i++) {
             System.out.println(quizCompetition.get(i).question+"("+quizCompetition.get(i).maxMarks+")");
             for(int j =0; j<quizCompetition.get(i).choices.length; j++) {
                 System.out.print(quizCompetition.get(i).choices[j]);
@@ -171,7 +205,7 @@ public final class Solution {
     /**
      * Displays the score report
      *
-     * @param      quiz     The quiz object
+     * @param      quiz  The quiz object
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
