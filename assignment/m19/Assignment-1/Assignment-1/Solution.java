@@ -110,6 +110,10 @@ public final class Solution {
                     System.out.println("Invalid penalty for question about sony");
                     return;
                 }
+                if(!tokens[2].equals("1") && !tokens[2].equals("2") && !tokens[2].equals("3") && !tokens[2].equals("4")) {
+                    System.out.println("Error! Correct answer choice number is out of range for question text 1");
+                    return;
+                }
 
                 Quiz q = new Quiz(tokens[0],choices,tokens[2],tokens[3],tokens[4]);
                 quizCompetition.add(q);
@@ -135,9 +139,10 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        for(int i=0;i<quizCompetition.size();i++){
+
+        for(int i=0; i<quizCompetition.size(); i++){
             System.out.println(quizCompetition.get(i).question+"("+quizCompetition.get(i).maxMarks+")");
-            for(int j =0 ; j<quizCompetition.get(i).choices.length; j++) {
+            for(int j =0; j<quizCompetition.get(i).choices.length; j++) {
                 System.out.print(quizCompetition.get(i).choices[j]);
                 System.out.print("    ");
             }
@@ -146,17 +151,17 @@ public final class Solution {
         }
         while(answerCount > 0) {
             String line = s.nextLine();
-            String[] tok = line.split(" ");
-            if(tok[1].equals("a")) {
-                tok[1] = "1";
-            } else if (tok[1].equals("b") ){
-                tok[1] = "2";
-            } else if (tok[1].equals("c")) {
-                tok[1] = "3";
-            }else if (tok[1].equals("d")) {
-                tok[1] = "4";
+            String[] newtoken = line.split(" ");
+            if(newtoken[1].equals("a")) {
+                newtoken[1] = "1";
+            } else if (newtoken[1].equals("b") ){
+                newtoken[1] = "2";
+            } else if (newtoken[1].equals("c")) {
+                newtoken[1] = "3";
+            }else if (newtoken[1].equals("d")) {
+                newtoken[1] = "4";
             } 
-            answersAttempted.add(tok[1]);
+            answersAttempted.add(newtoken[1]);
             answerCount--;
         }
     }
@@ -169,7 +174,7 @@ public final class Solution {
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
         int finalScore = 0;
-        for(int i=0;i<quizCompetition.size();i++) {
+        for(int i=0; i<quizCompetition.size(); i++) {
             System.out.println(quizCompetition.get(i).question);
                 if(answersAttempted.get(i).equals(quizCompetition.get(i).correctGuess)){
                     System.out.println(" Correct Answer! - Marks Awarded: "+quizCompetition.get(i).maxMarks);
