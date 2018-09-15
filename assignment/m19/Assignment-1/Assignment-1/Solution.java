@@ -176,9 +176,9 @@ public final class Solution {
         // read the user responses from the console
         // store the user respones in the quiz object
 
-        for(int i=0; i<quizCompetition.size(); i++) {
+        for(int i = 0; i < quizCompetition.size(); i++) {
             System.out.println(quizCompetition.get(i).question+"("+quizCompetition.get(i).maxMarks+")");
-            for(int j =0; j<quizCompetition.get(i).choices.length; j++) {
+            for(int j = 0; j < quizCompetition.get(i).choices.length; j++) {
                 System.out.print(quizCompetition.get(i).choices[j]);
                 System.out.print("    ");
             }
@@ -210,7 +210,7 @@ public final class Solution {
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
         int finalScore = 0;
-        for(int i=0; i<quizCompetition.size(); i++) {
+        for(int i = 0; i < quizCompetition.size(); i++) {
             System.out.println(quizCompetition.get(i).question);
                 if(answersAttempted.get(i).equals(quizCompetition.get(i).correctGuess)) {
                     System.out.println(" Correct Answer! - Marks Awarded: "+quizCompetition.get(i).maxMarks);
