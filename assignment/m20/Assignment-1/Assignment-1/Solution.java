@@ -37,19 +37,19 @@ class Question {
     /**
      * Constructs the object.
      *
-     * @param      questiontext       The questiontext
-     * @param      choices        The choices
-     * @param      correctAnswer  The correct answer
-     * @param      maxMarks       The maximum marks
-     * @param      penalty        The penalty
+     * @param      questiontext9       The questiontext9
+     * @param      choices9        The choices9
+     * @param      correctAnswer9  The correct answer9
+     * @param      maxMarks9       The maximum marks9
+     * @param      penalty9        The penalty9
      */
-    Question(final String questiontext, final String[] choices,
-        final int correctAnswer, final int maxMarks, final int penalty) {
-        this.questiontext = questiontext;
-        this.choices = choices;
-        this.correctAnswer = correctAnswer;
-        this.maxMarks = maxMarks;
-        this.penalty = penalty;
+    Question(final String questiontext9, final String[] choices9,
+        final int correctAnswer9, final int maxMarks9, final int penalty9) {
+        this.questiontext = questiontext9;
+        this.choices = choices9;
+        this.correctAnswer = correctAnswer9;
+        this.maxMarks = maxMarks9;
+        this.penalty = penalty9;
     }
     /**
      * { function_description }.
@@ -284,10 +284,6 @@ public final class Solution {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-        // final int five = 5;
-        // final int four = 4;
-        // final int two = 2;
-        // final int three = 3;
         if (q == 0) {
             System.out.println("Quiz does not have questions");
             return;
