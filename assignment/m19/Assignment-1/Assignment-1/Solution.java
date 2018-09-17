@@ -133,7 +133,7 @@ public final class Solution {
                     return;
                 }
                 if(choices.length <= 1) {
-                    System.out.println("trick question does not have enough answer choices");
+                    System.out.println("trick question  does not have enough answer choices");
                     return;
                 }
                 if(Integer.parseInt(tokens[3]) < 0) {
