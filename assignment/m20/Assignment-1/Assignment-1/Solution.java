@@ -291,7 +291,7 @@ public final class Solution {
         for (int i = 0; i < q; i++) {
             String[] tokens = scan.nextLine().split(":");
             String[] choices = tokens[1].split(",");
-            if (tokens.length != (2+1+2)  || tokens[0].length() == 0) {
+            if (tokens.length != (2 + 1 + 2)  || tokens[0].length() == 0) {
                 System.out.println("Error! Malformed question");
                 return;
             } else if (choices.length < 2) {
@@ -303,16 +303,16 @@ public final class Solution {
                     "Error! Correct answer choice number is out of range for "
                     + tokens[0]);
                 return;
-            } else if (!(Integer.parseInt(tokens[2+1]) > 0)) {
+            } else if (!(Integer.parseInt(tokens[2 + 1]) > 0)) {
                 System.out.println("Invalid max marks for " + tokens[0]);
                 return;
-            } else if (!(Integer.parseInt(tokens[2+2]) <= 0)) {
+            } else if (!(Integer.parseInt(tokens[2 + 2]) <= 0)) {
                 System.out.println("Invalid penalty for " + tokens[0]);
                 return;
             } else {
                 Question ques = new Question(tokens[0], choices,
-                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2+1]),
-                Integer.parseInt(tokens[2+2]));
+                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
+                Integer.parseInt(tokens[2 + 2]));
                 quiz.addQuestion(ques);
             }
         }
