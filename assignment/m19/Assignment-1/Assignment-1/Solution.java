@@ -180,7 +180,7 @@ public final class Solution {
             System.out.println(quizCompetition.get(i).question + "(" + quizCompetition.get(i).maxMarks + ")");
             for(int j = 0; j < quizCompetition.get(i).choices.length - 1; j++) {
                 System.out.print(quizCompetition.get(i).choices[j]);
-                System.out.print("/t");
+                System.out.print("\t");
             }
             System.out.print(quizCompetition.get(i).choices[quizCompetition.get(i).choices.length - 1]);            
             System.out.println();
