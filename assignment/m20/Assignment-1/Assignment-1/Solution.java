@@ -192,7 +192,7 @@ class Quiz {
             }
             
         }
-        System.out.println("Total Score: " + score);
+        System.out.println("Total Score: -" + score);
     }   
 }
 /**
