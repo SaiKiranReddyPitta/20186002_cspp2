@@ -183,11 +183,11 @@ class Quiz {
         for (int i = 0; i < size; i++ ) {
             System.out.println(getQuestion(i).getQuestionText());
             if (getQuestion(i).evaluateResponse(getQuestion(i).getResponse())) {
-                System.out.println("Correct Answer! - Marks Awarded :" + getQuestion(i).getMaxMarks());
+                System.out.println("Correct Answer! - Marks Awarded: " + getQuestion(i).getMaxMarks());
                 score += getQuestion(i).getMaxMarks(); 
                 
             } else {
-                System.out.println("Wrong Answer! - Penalty :" + getQuestion(i).getPenalty());
+                System.out.println("Wrong Answer! - Penalty: " + getQuestion(i).getPenalty());
                 score += getQuestion(i).getMaxMarks(); 
             }
             
