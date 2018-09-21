@@ -81,8 +81,9 @@ class Solution {
 		    			// System.out.println(files[i]);
 		    			String line = s.useDelimiter("\\A").next();
 		    			String[] tokens = line.toLowerCase().split(" ");
-		    			// System.out.println(tokens);
+		    			System.out.println(tokens);
 		    			bags.addDictn1(tokens);
+		    			
 
 
 		    			Scanner s1 = new Scanner(files[j]);
