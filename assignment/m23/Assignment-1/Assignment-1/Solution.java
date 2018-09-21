@@ -78,10 +78,10 @@ class Solution {
 		    	for(int j = 0; j<files.length; j++) {
                         BagOfWords bags = new BagOfWords();
 		    			Scanner s = new Scanner(files[i]);
-		    			// System.out.println(files[i]);
+		    			System.out.println(files[i]);
 		    			String line = s.useDelimiter("\\A").next();
 		    			String[] tokens = line.toLowerCase().split(" ");
-		    			System.out.println(tokens);
+		    			// System.out.println(tokens);
 		    			bags.addDictn1(tokens);
 		    			
 
