@@ -75,7 +75,7 @@ class Todoist {
 
 class todo {
     todo() {
-        
+
     }
 }
 /**
@@ -117,6 +117,17 @@ public class TodoistMain {
             }
         }
     }
+
+
+
+    // public static void ************* {
+    //     if(Integer.parseInt(todo[2]) < 0) {
+    //         System.out.println("Invalid timeToComplete" + todo[2]);
+    //     }
+    // }
+
+
+
 
     /**
      * method to test add task.
