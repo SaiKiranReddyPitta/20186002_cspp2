@@ -70,7 +70,8 @@ class Solution {
 	public static void main(String[] args) throws IOException {
 
 		try {
-			File file = new File("Test");
+			Scanner scan = new Scanner(System.in);
+			File file = new File(scan.nextLine());
 			File[] files = file.listFiles();
 
 		    for(int i = 0; i<files.length; i++) {
