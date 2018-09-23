@@ -18,7 +18,6 @@ class BagOfWords {
 	}
 
 	public void addDictn1(String[] list) {
-		System.out.println(dictionary1 + "firstdictionary");
 		for (String i : list) {
 			if (dictionary1.containsKey(i)) {
 				int k = dictionary1.get(i);
@@ -32,7 +31,7 @@ class BagOfWords {
 		// System.out.println(key+" "+dictionary1.get(key));
 	}
 	public void addDictn2(String[] list) {
-		System.out.println(dictionary2 + "seconddictionary");
+		// System.out.println(dictionary2 + "seconddictionary");
 		for (String i : list) {
 			if (dictionary2.containsKey(i)) {
 				int k = dictionary2.get(i);
@@ -67,6 +66,7 @@ class BagOfWords {
 		}
 		// System.out.println(c + "values of c");
 		den = Math.sqrt(a) * Math.sqrt(c);
+		System.out.print("" + num + den + res);
 		res = (num / den) * 100;
 		System.out.format("%.0f", res);
 		System.out.print("  ");
