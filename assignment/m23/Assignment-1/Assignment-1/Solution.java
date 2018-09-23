@@ -24,6 +24,7 @@ class BagOfWords {
 				dictionary1.put(i, 1);
 			}
 		}
+		System.out.println(dictionary1);
 		// for(String key: dictionary1.keySet())
 		// System.out.println(key+" "+dictionary1.get(key));
 	}
@@ -36,13 +37,12 @@ class BagOfWords {
 				dictionary2.put(i, 1);
 			}
 		}
+		System.out.println(dictionary2);
 		// for(String key: dictionary2.keySet())
 		// System.out.println(key+" "+dictionary2.get(key));
 	}
 
 	public void getDistance() {
-		System.out.println(dictionary1);
-		System.out.println(dictionary2);
 		float num = 0;
 		float a = 0;
 		double den = 0;
@@ -90,8 +90,8 @@ class Solution {
 					if (line != null) {
 						String[] tokens = line.toLowerCase().split(" ");
 						// System.out.println(tokens);
+						System.out.println(files[i].getName());
 						bags.addDictn1(tokens);
-
 					}
 
 
@@ -103,6 +103,7 @@ class Solution {
 					}
 					if (line1 != null) {
 						String[] tokens1 = line1.toLowerCase().split(" ");
+						System.out.println(files[j].getName());
 						bags.addDictn2(tokens1);
 					}
 					bags.getDistance();
