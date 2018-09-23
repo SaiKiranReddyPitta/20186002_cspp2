@@ -50,13 +50,16 @@ class BagOfWords {
 				num += dictionary1.get(i) * dictionary2.get(i);
 			}
 		}
+		System.out.println(num + "number common");
 		for (String i : dictionary1.keySet()) {
 			a += Math.pow(dictionary1.get(i), 2);
 		}
+		System.out.println(a + "values of a");
 		float c = 0;
 		for (String i : dictionary2.keySet()) {
 			c += Math.pow(dictionary2.get(i), 2);
 		}
+		System.out.println(c + "values of c");
 		den = Math.sqrt(a) * Math.sqrt(c);
 		res = (num / den) * 100;
 		System.out.format("%.0f", res);
