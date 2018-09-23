@@ -19,8 +19,6 @@ import java.io.*;
 import java.net.*;
 
 public class Distance {
-	//requirements are defined by provided tests
-	//       Test1.java, Test2.java, Test3.java, Test4.java
 	private HashMap<String, Integer> freqWords = new HashMap<>();
 	String s1 = "";
 	String s2 = "";
@@ -41,7 +39,6 @@ public class Distance {
 			while ((line = bufferedReader.readLine()) != null) {
 				s2 += line;
 			}
-			//System.out.println(s1);
 			String lcs = "";
 			for (int i = 0; i < s2.length(); i++) {
 				for (int j = i + 1 ; j <= s2.length(); j++) {
@@ -56,16 +53,11 @@ public class Distance {
 				ans = 100;
 			} else {
 				double numerator = lcs.length() * 2 * 100;
-				//System.out.print(numerator + " ");
 				double denominator = s1.length() + s2.length();
-				//System.out.print(denominator + " ");
-				//System.out.print(numerator/denominator + " ");
 				ans = Math.round(numerator / denominator);
 
 			}
 			System.out.format("%13.1f", ans);
-
-
 		} catch (Exception e) {
 			System.out.println("Exception");
 		}

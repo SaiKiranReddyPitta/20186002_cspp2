@@ -43,8 +43,6 @@ public final class Solution {
                         file1 = files[i].getName();
                         file2 = files[j].getName();
                     }
-                    // System.out.print(" ");
-                    //System.out.print(similar + "\t\t");
                 }
                 System.out.print(" ");
                 System.out.println();
