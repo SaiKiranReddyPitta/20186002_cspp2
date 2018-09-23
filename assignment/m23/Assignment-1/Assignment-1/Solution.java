@@ -66,7 +66,6 @@ class BagOfWords {
 		}
 		// System.out.println(c + "values of c");
 		den = Math.sqrt(a) * Math.sqrt(c);
-		System.out.print("" + num +"first" + den + "second" + res + "third");
 		res = ((num * 100)/ den);
 		System.out.format("%.0f", res);
 		System.out.print("  ");
@@ -91,6 +90,7 @@ class Solution {
 					while (s.hasNext()) {
 						line = s.useDelimiter("\\A").next();
 					}
+					System.out.println(line);
 					if (line != null) {
 						String[] tokens = line.toLowerCase().split(" ");
 						// System.out.println(tokens);
@@ -105,6 +105,7 @@ class Solution {
 					while (s1.hasNext()) {
 						line1 = s1.useDelimiter("\\A").next();
 					}
+					System.out.println(line1);
 					if (line1 != null) {
 						String[] tokens1 = line1.toLowerCase().split(" ");
 						//  System.out.println(files[j].getName());
