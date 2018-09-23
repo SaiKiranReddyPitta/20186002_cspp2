@@ -21,13 +21,13 @@ final class Solution {
      *
      * @throws     IOException  { exception_description }
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(final String[] args) throws IOException {
         try {
             Scanner scan = new Scanner(System.in);
             File file = new File(scan.nextLine());
             File[] files = file.listFiles();
             System.out.print("\t\t");
-            for(int k = 0; k < files.length - 1; k++) {
+            for (int k = 0; k < files.length - 1; k++) {
                 System.out.print(files[k].getName() + "\t");
             }
             System.out.print(files[files.length - 1].getName());
