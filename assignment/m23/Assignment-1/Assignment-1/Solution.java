@@ -9,10 +9,12 @@ import java.util.*;
 import java.io.*;
 
 class BagOfWords {
-	Map<String, Integer> dictionary1 = new HashMap<String, Integer>();
-	Map<String, Integer> dictionary2 = new HashMap<String, Integer>();
-	Map<String, List<Integer>> dictionary3 = new HashMap<String, List<Integer>>();
+    Map<String, Integer> dictionary1;
+    Map<String, Integer> dictionary2;
+	// Map<String, List<Integer>> dictionary3 = new HashMap<String, List<Integer>>();
 	BagOfWords() {
+		dictionary1 = new HashMap<String, Integer>();
+		dictionary2 =  new HashMap<String, Integer>();
 	}
 
 	public void addDictn1(String[] list) {
@@ -24,7 +26,7 @@ class BagOfWords {
 				dictionary1.put(i, 1);
 			}
 		}
-		System.out.println(dictionary1);
+		// System.out.println(dictionary1);
 		// for(String key: dictionary1.keySet())
 		// System.out.println(key+" "+dictionary1.get(key));
 	}
@@ -37,7 +39,7 @@ class BagOfWords {
 				dictionary2.put(i, 1);
 			}
 		}
-		System.out.println(dictionary2);
+		// System.out.println(dictionary2);
 		// for(String key: dictionary2.keySet())
 		// System.out.println(key+" "+dictionary2.get(key));
 	}
@@ -52,16 +54,16 @@ class BagOfWords {
 				num += dictionary1.get(i) * dictionary2.get(i);
 			}
 		}
-		System.out.println(num + "number common");
+		// System.out.println(num + "number common");
 		for (String i : dictionary1.keySet()) {
 			a += Math.pow(dictionary1.get(i), 2);
 		}
-		System.out.println(a + "values of a");
+		// System.out.println(a + "values of a");
 		float c = 0;
 		for (String i : dictionary2.keySet()) {
 			c += Math.pow(dictionary2.get(i), 2);
 		}
-		System.out.println(c + "values of c");
+		// System.out.println(c + "values of c");
 		den = Math.sqrt(a) * Math.sqrt(c);
 		res = (num / den) * 100;
 		System.out.format("%.0f", res);

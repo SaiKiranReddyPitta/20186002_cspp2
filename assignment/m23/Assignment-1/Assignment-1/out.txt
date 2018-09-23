@@ -1497,3 +1497,57 @@ shopping=1, authentic=1, online=5, unwanted=1, inconclusive.=1, forms=1, coming=
 3578.0values of a
 3578.0values of c
 100
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+empty directory
+
+Your Output: 
+File not found
+
+----------------------------------------
+Result: 0/3 testcases passed.
+Starting audit...
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:1:8: Unused import - java.io.BufferedReader. [UnusedImports]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:3:8: Unused import - java.io.FileReader. [UnusedImports]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:6:8: Unused import - java.util.Hashtable. [UnusedImports]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:8: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:9: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:11: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:12:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:12:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:12:30: Variable 'dictionary1' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:13:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:13:30: Variable 'dictionary2' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:14: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:14:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:14:36: Variable 'dictionary3' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:18:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:18:31: Parameter list should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:31:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:31:31: Parameter list should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:66:37: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:72: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:72:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:73:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:73:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:88: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:91: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:93: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:102: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:105: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] C:\Users\Sai Kiran\Desktop\20186002_cspp2\assignment\m23\Assignment-1\Assignment-1\Solution.java:106: Line is longer than 80 characters (found 87). [LineLength]
+Audit done.
+Checkstyle ends with 32 errors.
+
+
+[master 59a7fd2] "check_style_score -> 0 of 3 passed. style score: 0/1 "
+ 1 file changed, 1499 insertions(+)
+ create mode 100644 assignment/m23/Assignment-1/Assignment-1/out.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
