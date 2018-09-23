@@ -92,7 +92,7 @@ class Solution {
 					if (line != null) {
 						String[] tokens = line.toLowerCase().split(" ");
 						// System.out.println(tokens);
-						System.out.println(files[i].getName());
+						// System.out.println(files[i].getName());
 						bags.addDictn1(tokens);
 					}
 
@@ -105,7 +105,7 @@ class Solution {
 					}
 					if (line1 != null) {
 						String[] tokens1 = line1.toLowerCase().split(" ");
-						System.out.println(files[j].getName());
+						//  System.out.println(files[j].getName());
 						bags.addDictn2(tokens1);
 					}
 					bags.getDistance();
