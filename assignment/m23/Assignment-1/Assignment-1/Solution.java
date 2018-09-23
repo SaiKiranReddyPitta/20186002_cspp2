@@ -66,7 +66,7 @@ class BagOfWords {
 		}
 		// System.out.println(c + "values of c");
 		den = Math.sqrt(a) * Math.sqrt(c);
-		res = ((num * 100) / den);
+		res = Math.round((num * 100) / den);
 		System.out.format("%.0f", res);
 		System.out.print("  ");
 	}
