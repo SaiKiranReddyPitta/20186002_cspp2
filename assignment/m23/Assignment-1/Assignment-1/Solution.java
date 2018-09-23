@@ -9,8 +9,8 @@ import java.util.*;
 import java.io.*;
 
 class BagOfWords {
-    Map<String, Integer> dictionary1;
-    Map<String, Integer> dictionary2;
+	Map<String, Integer> dictionary1;
+	Map<String, Integer> dictionary2;
 	// Map<String, List<Integer>> dictionary3 = new HashMap<String, List<Integer>>();
 	BagOfWords() {
 		dictionary1 = new HashMap<String, Integer>();
@@ -66,7 +66,7 @@ class BagOfWords {
 		}
 		// System.out.println(c + "values of c");
 		den = Math.sqrt(a) * Math.sqrt(c);
-		res = ((num * 100)/ den);
+		res = ((num * 100) / den);
 		System.out.format("%.0f", res);
 		System.out.print("  ");
 	}
@@ -74,8 +74,7 @@ class BagOfWords {
 
 class Solution {
 	public static void main(String[] args) throws IOException {
-		String line = null;
-		String line1 = null;
+
 		try {
 			Scanner scan = new Scanner(System.in);
 			File file = new File(scan.nextLine());
@@ -84,13 +83,14 @@ class Solution {
 			for (int i = 0; i < files.length; i++) {
 
 				for (int j = 0; j < files.length; j++) {
+					String line = null;
+					String line1 = null;
 					BagOfWords bags = new BagOfWords();
 					Scanner s = new Scanner(files[i]);
 					// System.out.println(files[i]);
 					while (s.hasNext()) {
 						line = s.useDelimiter("\\A").next();
 					}
-					System.out.println(line);
 					if (line != null) {
 						String[] tokens = line.toLowerCase().split(" ");
 						// System.out.println(tokens);
@@ -105,7 +105,6 @@ class Solution {
 					while (s1.hasNext()) {
 						line1 = s1.useDelimiter("\\A").next();
 					}
-					System.out.println(line1);
 					if (line1 != null) {
 						String[] tokens1 = line1.toLowerCase().split(" ");
 						//  System.out.println(files[j].getName());
