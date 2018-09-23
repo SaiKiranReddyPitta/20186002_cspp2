@@ -44,7 +44,7 @@ class BagOfWords {
 		float num = 0;
 		float a = 0;
 		double den = 0;
-		double res;
+		double res = 0;
 		for (String i : dictionary1.keySet()) {
 			if (dictionary2.containsKey(i)) {
 				num += dictionary1.get(i) * dictionary2.get(i);
