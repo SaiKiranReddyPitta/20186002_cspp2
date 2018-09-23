@@ -41,6 +41,8 @@ class BagOfWords {
 	}
 
 	public void getDistance() {
+		System.out.println(dictionary1);
+		System.out.println(dictionary2);
 		float num = 0;
 		float a = 0;
 		double den = 0;
