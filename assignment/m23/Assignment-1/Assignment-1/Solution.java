@@ -73,6 +73,7 @@ class Solution {
             System.out.print(files[files.length - 1].getName());
             System.out.println();
 			for (int i = 0; i < files.length; i++) {
+				System.out.print(files[i].getName() + "\t");
 				for (int j = 0; j < files.length; j++) {
 					String line = null;
 					String line1 = null;
