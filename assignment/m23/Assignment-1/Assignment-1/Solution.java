@@ -70,7 +70,7 @@ class Solution {
             for(int k = 0; k < files.length - 1; k++) {
             	System.out.print(files[k].getName() + "\t");
             }
-            System.out.print(files[files.length].getName());
+            System.out.print(files[files.length - 1].getName());
             System.out.println();
 			for (int i = 0; i < files.length; i++) {
 				for (int j = 0; j < files.length; j++) {
