@@ -116,7 +116,7 @@ class Solution {
 				System.out.println();
 			}
 		} catch (Exception e) {
-			System.out.println("File not found");
+			System.out.println("empty directory");
 
 		}
 
