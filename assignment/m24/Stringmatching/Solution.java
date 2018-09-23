@@ -17,9 +17,9 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         try {
-            Scanner scan = new Scanner(System.in);
-            String line = scan.nextLine();
-            File dir = new File(line);
+            Scanner s = new Scanner(System.in);
+            String l = s.nextLine();
+            File dir = new File(l);
             File[] files = dir.listFiles();
             double maxVal = 0;
             String file1 = null;
