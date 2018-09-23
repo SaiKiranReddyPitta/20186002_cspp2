@@ -1,9 +1,10 @@
-import java.util.Scanner;
 import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 /**
- * Solution Class.
+ * Class for solution.
  */
-public final class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -11,46 +12,52 @@ public final class Solution {
 
     }
     /**
-     * Main function.
+     * { function_description }.
      *
-     * @param      args  The arguments
+     * @param      args         The arguments
+     *
+     * @throws     IOException  { exception_description }
      */
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws IOException {
         try {
-            Scanner s = new Scanner(System.in);
-            String l = s.nextLine();
-            File dir = new File(l);
-            File[] files = dir.listFiles();
-            double maxVal = 0;
-            String file1 = null;
-            String file2 = null;
-            System.out.print("             ");
-            for (int i = 0; i < files.length - 1; i++) {
-                System.out.print(files[i].getName() + "    ");
+            Scanner scan = new Scanner(System.in);
+            File file = new File(scan.nextLine());
+            File[] files = file.listFiles();
+            System.out.print("\t\t");
+            for (int k = 0; k < files.length - 1; k++) {
+                System.out.print(files[k].getName() + "\t");
             }
             System.out.print(files[files.length - 1].getName());
-            System.out.print(" ");
             System.out.println();
             for (int i = 0; i < files.length; i++) {
-                System.out.print(files[i].getName());
+                System.out.print(files[i].getName() + "\t");
                 for (int j = 0; j < files.length; j++) {
-                    Distance map1 = new Distance(files[i], files[j]);
-                    //Distance map2 = new Distance(files[j]);
-                    double similar = map1.getSimilarity();
-                    if (similar > maxVal && !files[i].getName().equals(
-                                files[j].getName())) {
-                        maxVal = similar;
-                        file1 = files[i].getName();
-                        file2 = files[j].getName();
+                    String line = null;
+                    String line1 = null;
+                    BagOfWords bags = new BagOfWords();
+                    Scanner s = new Scanner(files[i]);
+                    while (s.hasNext()) {
+                        line = s.useDelimiter("\\A").next();
                     }
+                    if (line != null) {
+                        String[] tokens = line.toLowerCase().split(" ");
+                        bags.addDictn1(tokens);
+                    }
+                    Scanner s1 = new Scanner(files[j]);
+                    while (s1.hasNext()) {
+                        line1 = s1.useDelimiter("\\A").next();
+                    }
+                    if (line1 != null) {
+                        String[] tokens1 = line1.toLowerCase().split(" ");
+                        bags.addDictn2(tokens1);
+                    }
+                    bags.getDistance();
                 }
-                System.out.print(" ");
                 System.out.println();
             }
-            System.out.println("Maximum similarity is between " + file1
-                               + " and " + file2);
         } catch (Exception e) {
-            System.out.println("Empty Directory");
+            System.out.println("empty directory");
+
         }
     }
 }
