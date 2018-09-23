@@ -16,30 +16,28 @@ class BagOfWords {
 	}
 
 	public void addDictn1(String[] list) {
-        for(String i : list) {
-         	if(dictionary1.containsKey(i)) {
-         		int k = dictionary1.get(i);
-         		dictionary1.put(i, k+1);
-         	}
-         	else {
-         		dictionary1.put(i, 1);
-         	}
-        }
-        // for(String key: dictionary1.keySet())
-        // System.out.println(key+" "+dictionary1.get(key));
+		for (String i : list) {
+			if (dictionary1.containsKey(i)) {
+				int k = dictionary1.get(i);
+				dictionary1.put(i, k + 1);
+			} else {
+				dictionary1.put(i, 1);
+			}
+		}
+		// for(String key: dictionary1.keySet())
+		// System.out.println(key+" "+dictionary1.get(key));
 	}
 	public void addDictn2(String[] list) {
-        for(String i : list) {
-         	if(dictionary2.containsKey(i)) {
-         		int k = dictionary2.get(i);
-         		dictionary2.put(i, k+1);
-         	}
-         	else {
-         		dictionary2.put(i, 1);
-         	}
-        }
-        // for(String key: dictionary2.keySet())
-        // System.out.println(key+" "+dictionary2.get(key));
+		for (String i : list) {
+			if (dictionary2.containsKey(i)) {
+				int k = dictionary2.get(i);
+				dictionary2.put(i, k + 1);
+			} else {
+				dictionary2.put(i, 1);
+			}
+		}
+		// for(String key: dictionary2.keySet())
+		// System.out.println(key+" "+dictionary2.get(key));
 	}
 
 	public void getDistance() {
@@ -47,59 +45,67 @@ class BagOfWords {
 		float a = 0;
 		double den = 0;
 		double res;
-		for(String i:dictionary1.keySet()){
-			if(dictionary2.containsKey(i)) {
-                num += dictionary1.get(i)*dictionary2.get(i);
+		for (String i : dictionary1.keySet()) {
+			if (dictionary2.containsKey(i)) {
+				num += dictionary1.get(i) * dictionary2.get(i);
 			}
 		}
-		for(String i:dictionary1.keySet()) {
-            a += Math.pow(dictionary1.get(i), 2);
+		for (String i : dictionary1.keySet()) {
+			a += Math.pow(dictionary1.get(i), 2);
 		}
 		float c = 0;
-		for(String i:dictionary2.keySet()) {
-            c += Math.pow(dictionary2.get(i), 2);
+		for (String i : dictionary2.keySet()) {
+			c += Math.pow(dictionary2.get(i), 2);
 		}
-		den = Math.sqrt(a)*Math.sqrt(c);
-		res = (num/den)*100;
-		System.out.format("%.0f",res);
+		den = Math.sqrt(a) * Math.sqrt(c);
+		res = (num / den) * 100;
+		System.out.format("%.0f", res);
 		System.out.print("  ");
-		}
+	}
 }
 
 class Solution {
 	public static void main(String[] args) throws IOException {
-
+		String line = null;
+		String line1 = null;
 		try {
 			Scanner scan = new Scanner(System.in);
 			File file = new File(scan.nextLine());
 			File[] files = file.listFiles();
 
-		    for(int i = 0; i<files.length; i++) {
+			for (int i = 0; i < files.length; i++) {
 
-		    	for(int j = 0; j<files.length; j++) {
-                        BagOfWords bags = new BagOfWords();
-		    			Scanner s = new Scanner(files[i]);
-		    			// System.out.println(files[i]);
-		    			String line = s.useDelimiter("\\A").next();
-		    			String[] tokens = line.toLowerCase().split(" ");
-		    			// System.out.println(tokens);
-		    			bags.addDictn1(tokens);
+				for (int j = 0; j < files.length; j++) {
+					BagOfWords bags = new BagOfWords();
+					Scanner s = new Scanner(files[i]);
+					// System.out.println(files[i]);
+					while (s.hasNext()) {
+						line = s.useDelimiter("\\A").next();
+					}
+					if (line != null) {
+						String[] tokens = line.toLowerCase().split(" ");
+						// System.out.println(tokens);
+						bags.addDictn1(tokens);
+
+					}
 
 
 
-		    			Scanner s1 = new Scanner(files[j]);
-		    			// System.out.println(files[j]);
-		    			String line1 = s1.useDelimiter("\\A").next();
-		    			String[] tokens1 = line1.toLowerCase().split(" ");
-		    			bags.addDictn2(tokens1);
-
-		    			bags.getDistance();
-		    			// System.out.println(i+" "+j);
-		    	}
-		    	System.out.println();
-		    }
-		}
-		catch(Exception e) {
+					Scanner s1 = new Scanner(files[j]);
+					// System.out.println(files[j]);
+					while (s1.hasNext()) {
+						line1 = s1.useDelimiter("\\A").next();
+					}
+					if (line1 != null) {
+						String[] tokens1 = line1.toLowerCase().split(" ");
+						bags.addDictn2(tokens1);
+					}
+					bags.getDistance();
+					// System.out.println(i+" "+j);
+				}
+				System.out.println();
+			}
+		} catch (Exception e) {
 			System.out.println("File not found");
 
 		}
@@ -107,23 +113,23 @@ class Solution {
 
 	}
 }
-  //       try {
-		// 	File file2 = new File("input1.txt");
-		// String inputLine2 = null;
-		// BufferedReader reader2 = new BufferedReader(new FileReader(file2));
-		// while((inputLine2 = reader2.readLine())!=null) {
-  //            String[] words1 = inputLine2.toLowerCase().split(" ");
-  //            bags.addDictn2(words1);
-		//     }
-		// }
-  //       catch(FileNotFoundException e) {
-		// 	System.out.println("File not Found");
-		// }
-  // //Scanner input1 = new Scanner(files[i]);
-		//     		String[] words1 = input1.nextLine().toLowerCase().split(" ");
-		//     		System.out.println(words1);
-		//     		bags.addDictn1(words1);
+//       try {
+// 	File file2 = new File("input1.txt");
+// String inputLine2 = null;
+// BufferedReader reader2 = new BufferedReader(new FileReader(file2));
+// while((inputLine2 = reader2.readLine())!=null) {
+//            String[] words1 = inputLine2.toLowerCase().split(" ");
+//            bags.addDictn2(words1);
+//     }
+// }
+//       catch(FileNotFoundException e) {
+// 	System.out.println("File not Found");
+// }
+// //Scanner input1 = new Scanner(files[i]);
+//     		String[] words1 = input1.nextLine().toLowerCase().split(" ");
+//     		System.out.println(words1);
+//     		bags.addDictn1(words1);
 
-		//     		Scanner input2 = new Scanner(files[j]);
-		//     		String[] words2 = input2.nextLine().toLowerCase().split(" ");
-		//     		bags.addDictn2(words2);
+//     		Scanner input2 = new Scanner(files[j]);
+//     		String[] words2 = input2.nextLine().toLowerCase().split(" ");
+//     		bags.addDictn2(words2);
